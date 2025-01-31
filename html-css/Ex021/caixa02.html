@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Favicon Image - 192x192.png" type="image/x-icon">
+    <title>Grouping Tags</title>
+    <!-- Cap 2 Aula 26 (Grouping Tags em HTML5)-->
+    <!-- Nesta Aula nos vamos aprender para que devemos usar os (Box Model) em nosso Site, nos já aprendemos como utiliza-las mas agora vamos entender o por que utiliza-las.-->
+    <!-- Como Exemplos de (Grouping Tags) nos já aprendemos duas, sendo elas a Tag (div) e a Tag (span).-->
+</head>
+    <style>
+        body{/* Aqui nos estamos criando o Seletor da Tag (body) que é o "Corpo" da Página.*/
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bolder; /* (font-weight: bolder;) é um Negrito bem forte, (font-weight: bold;) é um Negrito normal.*/
+        background-color: darksalmon;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav{
+            background-color: rgb(130, 130, 130);
+            padding: 5px;
+        }
+        nav > a:hover{
+            text-decoration: none;
+            color: white;
+            
+            box-shadow: 5px 5px 5px black; /* Cap 2 Aula 27 (Sombras nas Caixas), aqui nos estamos usando a Formatação CSS3 para criarmos Sombras na Caixas e para fazer isso nos estamos usando a "Tag" (box-shadow:;) e passamos seus Quatro Parâmetros, o Primeiro sendo o Deslocamento Horizontal, o Segundo sendo o Deslocamento Vertical, o Terceiro sendo o Espalhamento e o Quarto sendo a Cor da Sombea. Com isso nos conseguimos criar uma Sombra nas Caixas (Box-Model).
+            Obs : Existem sombras criadas dentro da Caixa : InSet
+            Obs : Existem sombras criadas fora da Caixa : OutSet. */
+
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px; /* Cap 2 Aula 28 (Arredondamento das Bordas), isso se aplica mais as (Model Box) mas é muito interessante o Aspecto que isto causa, bem de Qualquer modo para causarmos este efeito na Formatação CSS3 nos usamos a "Tag" (border-radius:;) e passamos como Parâmetros as 4 Medidas em Pixels de cada um dos quatro cantos da Box ou Simplesmente passamos apenas uma Medida em pixels em um único Parâmetro e esta medida vai se aplicar e servir para todos os Quatro Cantos da Box.*/
+            /* Obs : Lembrando que nos podemos inspencionar os elementos que temos e que estamos adicionando na nossa Página, basta usar a ferramenta (Inspencionar) do navegador.*/
+
+            /* Se quisermos mmisturar este Aspecto de Borda arredondadas com as Sombras na Box basta usar a "Tag" da Sombra (box-shadow:;) na proxima linha e atribuir os seus Parâmetros que até a sobra da Box ficará arredondada. Basta fazer desta forma, veja:*/
+            /*box-shadow: 10px 10px 10px black;*/
+        }
+        article{
+            background-color: lightgray;
+        }
+        article > aside{
+            background-color: rgb(179, 179, 179);
+            padding: 5px;
+        }
+        
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+        }
+        footer > p{
+            margin: 0px;
+        }
+    </style>
+<body>
+    <!-- Antigamente usavam-se varias Tags (div) para criar a "Estrutura" do Site, isso no HTML4, não é necessariamente errado fazer isso mas existem maneiras mais corretas de criarmos a "Estrutura" do nosso Site, Hoje nesta Aula nos Vamos aprender sobre (Grouping Tags) Semanticas, que podem nos ajudar a Montar uma "Estrutura" para o Site de uma forma mais Organizada.-->
+
+    <!-- Nos usaremos estas Tags
+    (Header) Traduzindo fica "Cabeçalho"
+    (Main) Este aqui é o Conteúdo Principal
+    (Footer) -->
+
+    <!-- Obs : As Tags que usaremos aqui são vistas sim como uma Tag (Div) mas são bem mais valorizadas pelo Site, póis são Tags Semanticas.-->
+
+    <!-- A Seguir nos vamos começar a Montar a "Estrutura" do Site só que com (Grouping Tags) de maneira Semantica, veja:-->
+
+    <header> <!-- Cabeçalho -->
+        <h1>Seja bem vindo ao meu Site</h1>
+
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section id = "Assunto"> Oi Ronald, Tudo bom? Esse espaço aqui não teve Formatação em CSS3.</section>
+        <section id = "Noticias">
+
+            <article>
+                <h2>Noticia Sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt unde incidunt quasi architecto quaerat quia alias enim dolorem minus asperiores, ea maxime? Non quaerat omnis unde quam suscipit pariatur beatae.</p>
+
+                <aside>
+                    <p>Artigo Escrito por José da Silva</p>
+                </aside>
+
+            </article>
+
+        </section>
+        <footer>
+            <p>Desenvolvido pelo Ronald</p>
+        </footer>
+    </main>
+    <!-- Veja como a "Estrutura" do nosso Site nos parece muito mais Organizada e bem feita, tudo isso foi Graças as (Grouping Tags) que fazem a "Estrutura" do Site de uma maneira mais Semantica, no HTML5 não temos limitações sobre as (Grouping Tags), nos podemos usar qualquer (Gropunig Tag) dentro de qualquer (Grouping Tag).-->
+
+    <!-- Com tudo isso que nos fizemos a "Estrutura" do nosso Site já está Ok e pronta mas nos podemos criar uma Formatação CSS para deixa-lo ainda mais Bonito, agora nos vamos direto para a Tag (Style) fazer isso, o nosso codigo vai continuar Lá.-->
+
+
+</body>
+</html>

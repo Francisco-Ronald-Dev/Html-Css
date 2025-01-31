@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classes</title>
+    <link rel="shortcut icon" href="../Favicon Image - 192x192.png" type="image/x-icon">
+
+    <!-- Cap 2 Aula 21 - Neste vídio nos vamos aprender sobre PseudoClasses, como usa-las e para que elas servem.-->
+
+    <style>
+        div{ /* Aqui nos estamos criando um Seletor para as Divs em com o CSS Interno. */
+            display: inline-block; /* Aqui nos estamos usando o (display:;) mas depois nos vamos aprender como funciona o (Display-flex:;).*/
+            background-color: rgb(245, 224, 198);
+            border: 1px solid black; /* Vale lembrar que em algums casos bem curiososo do CSS nos devemos passar os Parâmetros sem usar a Virgula (,) para separa-los.*/
+            text-align: center;
+            height: 200px;
+            width: 200px;
+
+
+        }
+
+        /* Como você já sabe o Hashtag (#) é a "Chave de acesso" do (id),
+        o Ponto Final (.) é a "Chave de Acesso" da (Class)
+        e os Dois Ponros (:) são a "Chave de Acesso" das Pseudo-Classes.*/
+
+        /* Antes de Progredirmos vamos atribuir algums (id) as nossas Div, então vamos para as Div agora.*/
+
+
+
+        /*Obs : As Pseudo-Classes tem que estár Relacionada a uma Elemento ou a uma Classe.
+        Obs : Pseudo-Classes são relacionadas ao Estado de um Determinado Elemento, como se fosse um Evento (Event) da Godot, nos podemos usar as Pseudo-Classes para descobrirmos se por exemplo o Mouse está em cima do Elemento, são coisas deste tipo.*/
+
+        /* A Baixo nos estamos criando um Seletor das Div mas estamos usando os Dois Pontos (:) para Encontrarmos um Evento Agradavel para o Úsuario que ira acontecer quando algo Ocorrer com este Determinado Elemento que no caso são as nossas Div, o Evento que escolhemos é o (hover) que é um Evento que acontece quando o Mouse está sobre algu, no nosso caso sobre as nossas Div.*/
+
+        div:hover{ /* Pronto, isso que nos fizemos aqui é uma Pseudo-Classe.*/
+            background-color:brown; /* Aqui nos estamos informando que a Propriedade (background-color) deve ficar vermelha quando o Evento escolhido ocorrer, quando o evento não acontecer mais as Div irão executar o Seletor de Div criado lá em cima neste codigo, já que ele está a cima deste e vem primeiro.*/
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Aqui nos vamos usar brevemente as Div e Div Semânticas, mas vale lembrar que nos vamos nos Aprofundar bem mais neste Conteúdoa partir do Terceiro Capítulo.-->
+    
+    <!-- As Div elas pegam do inicio da linha até o final dela, só pra lembrar.-->
+
+    <!-- Agora que estamos aqui nas Div vamos atribuir algums (id) as nossas Div mas vamos atribuir (id) que fassão sentido.-->
+    <div id="01">01</div>
+    <div id="02">02</div>
+    <div id="03">03</div>
+    <!-- Agora que já atribuimos os nossos (id) as nossas Div vamos retornar para o CSS Interno da Tag (Style).-->
+    
+</body>
+</html>

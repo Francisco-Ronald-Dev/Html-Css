@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+    <link rel="shortcut icon" href="c:\Users\Ronald\OneDrive\Documentos\Estudos\Exercicios\html-css\Favicon Image - 192x192.png" type="image/x-icon">
+</head>
+<body>
+    <h1>Trabalhando com Listas</h1>
+    <h2>Listas Ordenadas</h2>
+
+    <ol type="I"> <!-- Aqui nos estamos usando a Tag (ol) com o seu Parâmetro (type) e escolhemos o valor (I) que fará a nossa Lista Ordenada com Números Romanos em Maisculo-->
+        <!-- Aqui nos estamos usando a Tag (ol) que seiguinifica "Lista Ordenada" -->
+
+        <!-- Toda Lista Ordenada Precisa dos seus "Items de Lista" e para isso usaremos a tag (li)-->
+         <li>Acordar</li>
+         <li>Tomar Café</li>
+         <li>Escovar os Dentes</li>
+    </ol>
+
+    <h2>Listas não Ordenadas</h2>
+    <ul> <!-- Para Criar Listas não Ordenadas nos usaremos a Tag (ul) que siguinifica (Unordered Lists), vale lembrar também que está tag (ul) também possui seus parametros que devem ser passados dentro de (<>) --> 
+
+        <!-- Assim como as Listas Ordenadas nos também precisamos da tag (li) para adicionarmos items à nossa Lista-->
+
+        <li>Ir para o Trabalho</li>
+        <li>Sair com minha Namorada</li>
+        <li>Jogar Vidio Game</li>
+
+    </ul>
+
+    <h2>Juntando Listas 1.0</h2> <!-- Aqui nos vamos aprender a juntar as nossas Listas-->
+    <ol> <!-- Aqui nos estamos usando a Tag (ol) para começarmos a Criar a nossa Lista que será uma Lista Referente as minhas Linguagens Favoritas -->
+        <li>Antigas</li> <!-- Aqui nos usamos a Tga (li) para adicionarmos um Item à nossa Lista-->
+        <ol><!-- Agora nos usamos a Tag (ol) novamente para criarmos uma Lista dentro do Item de outra Lista já existente.-->
+            <li>Fortran</li>
+            <li>Delphi</li>
+
+        </ol> 
+        <li>Novas</li>
+        <ol start="3"> <!-- Aqui nos estamos usando novamenete a Tag (ol) para criarmos a Lista mas estamos passando o Parâmetro (start = "3") para que a nossa Lista comece apartir do Número 3, fizemos isso para "dar copntinuidade" à lista que fizemos anteriormente.-->
+            <li>Pythom</li>
+            <li>JavaScript</li>
+        </ol>
+    </ol>
+
+    <!-- Até agora nos utilizamos apenas a tag (ol) mas da para fazermos a mesma coisa com a Tag (ul).-->
+
+    <h2>Lista de Definições</h2>
+    <dl>
+        <dt>HTML : </dt> <!-- Termo -->
+        <dd>Linguagem de Marcação para a Criação de um Site</dd> <!-- Descrição -->
+    </dl>
+
+</body>
+</html>

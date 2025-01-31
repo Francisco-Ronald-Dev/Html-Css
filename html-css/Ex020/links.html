@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizando Links</title>
+    <link rel="shortcut icon" href="../Favicon Image - 192x192.png" type="image/x-icon">
+    <!-- Cap 2 Aula 22 (Pseudo-Elementos em CSS)-->
+    <!-- Está Aula e este Arquivo vão ser bem Auto-didatas.-->
+    <!-- Comece a Ver este Codigo dentro da Tag (body).-->
+
+    <style>
+        a{
+            color: red;
+            font-weight: bold;
+        }
+
+        a:visited{ /* Aqui nos estamos usando um Pseudo-Classe que detecta o Evento responsavel por Identificar Links já Visitados, (:visited), e então podemos adicionar Algumas Configurações desejadas neste Seletor */
+            color: rgb(105, 11, 11);
+
+        }
+
+        a:hover{ /* Aqui nos estamos usando um Pseudo-Classe que detecta o Evento responsavel por Identificar quando passamos o Mouse por cima de Algu, (:hover), e então podemos adicionar Algumas Configurações desejadas neste Seletor */
+
+        }
+
+        a:active{ /* Aqui nos estamos usando um Pseudo-Classe que detecta o Evento responsavel por Identificar quando clicamos em Links, (:active), e então podemos adicionar Algumas Configurações desejadas neste Seletor */
+            color: yellow;
+
+        }
+
+        /* Agora nos vamos estudar os Pseudo-Elementos que podem atuar nas Classes nos Id e em outras coisas, os Pseudo-Elementos mechem no Conteúdo do Elemento/Parâmetro.*/
+        /* Os Pseudo-Elementos são Usados e Identificados pelos Dois pontos duas vezes (::).
+        /* Só pra lembrar o Sinal de (>) siguinifica o Children.*/
+
+        a::before{ /* Aqui no estamos criando um Seletor para a Tag (a) depois nos usamos os Dois pontos duas vezes (::) porque é assim que usamos os Pseudo-Elementos e depois nos escolhemos um "Evento" que foi o (before) que siguinifica (antes). Agora nos vamos fazer algumas Configurações neste Seletor.*/
+
+            content: " --> "; /* Aqui nos usamos o Parâmetro (content) e passamos como Parâmetro o valor (" --> "), isto siguinifica que está seta será adicionada antes de todos os Elementos da Tag (a).*/
+
+        }
+
+        a::after{ /* Aqui no estamos criando um Seletor para a Tag (a) depois nos usamos os Dois pontos duas vezes (::) porque é assim que usamos os Pseudo-Elementos e depois nos escolhemos um "Evento" que foi o (after) que siguinifica (depois). Agora nos vamos fazer algumas Configurações neste Seletor.*/
+
+            content: " :D "; /* Aqui nos usamos o Parâmetro (content) e passamos como Parâmetro o valor (" :D "), isto siguinifica que está seta será adicionada depois de todos os Elementos da Tag (a).*/
+        }
+
+        /* Nos Também podemos usar os Pseudo-Elementos (::) em Conjunto com as Class (.) e com os Id (#) .*
+        Obs : Na dúvida veja o Momento (11:39) desta Aula 22 do Cap 2.*/
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1> <!-- Criando o (h1)-->
+    <ul> <!-- Criando a lista-->
+        <!-- Lembrando que para Envelopar um Trecho do Codigo basta Selecionar todo o Trecho com o Mouse e usar o Atalho (Ctrl + Shift + P) e depois apertar Enter na Opição que envelopa e depois digitar a Tag que você deseja usar para envelopar o Trecho selecionado, a Tag que usamos nas três Linhas de Codgo abaixo foi a Tag (a) de Âncora que cria a Ligação que são os (Links) da internet.-->
+        <li><a href="https://youtu.be/xAM51Ovpr9M?si=we6qCicIoe6rxbTx">Link para um Vídio Aléatorio.</a></li>
+        <li><a href="https://i.pinimg.com/originals/d5/a8/af/d5a8afa08b763daccf504c7dffe5a3a0.jpg">Link para uma Imagem Aléatoria.</a></li>
+        <li><a href="https://youtu.be/6vQN8l4ABpM?si=QNu3LG5F6sNWHNhi">Link para um Episodio de Dagão Ball Z do Arco do Trunks do Futuro.</a></li>
+    </ul>
+    <!-- Agora continue vendo este Codigo dentro da Tag (Style).-->
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo de Links</title>
+    <link rel="shortcut icon" href="c:\Users\Ronald\OneDrive\Documentos\Estudos\Exercicios\html-css\Favicon Image - 192x192.png" type="image/x-icon">
+</head>
+<body>
+    <h1>Usando Links Externos</h1> <!-- Lniks Externos são links que levão para outros sites qu não são nossos-->
+    <p>Você pode acessar o meu <a href="https://github.com/TIGAMER9P/Tutorial-de-git">Repositorio Público no GitHub</a></p> <!-- Aqui nos usamos a Tag (a) que é uma Âncora para o Nosso Link, no Parâmetro (href) da Tag nos vamos passar o Endereço completo da nossa URL-->
+    <p>Você pode acessar o meu <a href="https://www.youtube.com/@animandoodia8660" target= "_blank" rel="external">Canal do YouTube</a></p> <!-- Neste Link nos vamos usar 2 Parâmetros a mais, vamos usar o (target = "_blank") e o (rel = "external"), isso fará com que o úsuario ao clicar no link abra uma nova aba para ele.-->
+
+    <!-- Depure esta página e click nos dois links para que você possa testa-los e ver a Diferença que esses dois parâmetros causão,alias é mais recomendavel que ao Criarmos link devemos cria-los da segunda maneira que no caso é a que usamos os dois parâmetros a mais.-->
+
+    <h1>Usando Links Internos</h1> <!-- Agora nos vamos trabalhar com Links Internos que são aqueles Links usados para Estabelecer uma Conexão entre duas Páginas e neste caso estas duas Páginas devem ser nossas-->
+
+    <!-- Nos Arquivos à Direita você deve ser capaz de Visualizar outro Arquivo HTML chamado de (pag002) este Arquivo no caso é a nossa "Segunda Página" e é com este Arquivo que vamos estabelecer a Conexão via Link Interno -->
+
+    <p>Esta é a Primeira Página do Site, se você quiser pode acessar também a <a href="pag002.html" rel="next">Segunda Página do Site</a></p> <!-- Perceba que, com o Link Internoo nos navegamos pelos nossos Arquivos e não por URL'S da Internet, também vale ressaltar que nos usamos o Parâmetro (rel = "next") para informar que este Link levará para a Proxima Página não exatamente a "Segunda Página".-->
+
+    <h2> Usando Links Internos para Avançar em Um Arquivo dentro de uma Pasta</h2>
+
+    <!-- Suponha que voce quer fazer a Conexão entre um Arquivo e um Arquivo que esta dentro de uma Página, usaremos está conexão para que você possa ir e voltar.-->
+    <!-- Veja que eu criei uma Pasta chamada de ("noticias") e dentro desta Pasta eu criei o Arquivo (pag003.html) este Arquivo será a nossa Página de Noticias e nos queremos acessa-la-->
+    
+    <p>Você pode acessar a Nossa <a href="noticias/pag003.html" target="_self" rel="next">Página de Nóticias</a></p> <!-- Perceba que aqui nos estamos acessando um Arquivo que está dentro de uma Página e setar o nosso Endereço/Caminho sem erros eu utilizei o Atalho (Ctrl + Space) -->
+
+    <!-- Também vale ressaltar que nos estamos querendo fazer isso sem abrir uma nova aba, para que isso seja feito corretamente nos precisamos setar o Parâmetro (target = "_self"), portanto o mais adequado a se fazerr é isso, sem isso funcionará também mas assim é mais Semantico e mais Organizado-->
+
+    <h1>Links para Downloads</h1>
+    <ul>
+    <li><a href="#"> Baixe o Pdf</a></li> <!-- Aqui nos estamos usando o Caractere ("#") e isso indica um "DownLoad invalido"-->
+    <li><a href="livro/01 - História da Internet.zip" download="livro.zip" type="application/zip">Baixe o Livro Zipado aqui</a></li> <!-- Aqui sim nos estamos realmente fazendo o Download do Arquivo em pdf, vale lembrar que aqui nos estamos usando a Tag (a) mas estamos passando dois Parâmetros de extrema Importância, o Primeiro deles é (download = "Aqui vai o nome do seu arquivo com a extensão dele") e o Segundo deles é 
+    (type = "Aqui vai o tipo de Download deste MetaDado") como o Arquivo que eu quero baixar é .zip eu usei "application/zip". -->
+
+    <!-- Se você quer descobriir como faz o Download de algum MetaDado, seja, ogv, ogb, mp3, mp4 ou svg basta acessar este Link : https://www.iana.org/assignments/media-types/media-types.xhtml-->
+
+    <!-- Caso tenha dificuldade de encontrar o Tipo expecifico do Download do MetaDado desejado basta usar o Atalho (Ctrl + F) e "Digitar" o que você busca, depois de Enter.-->
+    </ul>
+</body>
+</html>

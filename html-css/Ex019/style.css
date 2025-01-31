@@ -1,0 +1,31 @@
+@charset  "UTF-8"; /* Aqui na Primeira linha do Codigo nos estamos usando o (@charset "UTF-8") para setarmos a Regra que este Script CSS vai ser Compativel com os Acentos e Caracteres Acentuados do Teclado, devemos fazer isso para evitarmos erros de Ortografia no nosso Síte.*/
+
+/* Para que possamos Personalizar Seletores Volte na Página do HTML e vejá o Primeiro (h1) que criamos.*/
+
+/* Agora que voltamos do nosso Script HTML vamos criar o Seletor Personalizado daquele (h1), veja:*/
+
+/* Obs : Tudo que for (id) em HTML será (#) em CSS.
+Tudo que é (Class) em HTML será (.) em CSS.*/
+
+h1#Principal{ /* No momento em que estamos criando este Seletor personalizado nos chamamos a Tag que o Seletor vai interagir que no nosso caso é o (h1), depois disso nos usamos a HasTag (#) e após isso nos passamos o (id) que atribuimos ao Determinadop Seletor, que no nosso caso aqui foi o valor ("Principal") Só que vale ressaltar que na Declaração do Seletor Personalizado não precisamos usar as ('') ou ("") apenas o valor do (id) da Tag que atribuimos lá na nossa Página HTML.*/
+
+    text-align: center; /* Aqui nos estamos usando a Tag (text-align: center;) Para criarmos uma Configuração Única deste (h1) onde diferente dos outros (h1) da nossa Página este ira estar Centralizado.*/
+
+}
+
+/*-----------------------------------------------------------------------------------------------------------------*/
+/* Cápitulo 2 Aula 21 ( Classificando Seletores Personalizados) */
+/* Se voce está aqui é porque você já Classificou os Seletores Personalizados na Página HTML com o Parâmetro (Class=") e agora nos vamos Personalizar estes Seletores Classificados.*/
+/* Para você acessar os Seletores Classificados você deve usar o (.) e o Valor do Parâmetro (Class) que você atribui a eles mas pode iguinorar as ('') ou as (""), basta fazer assim: */
+
+.basico{
+    /* Na linha de Código a Baixo nos estamos atribuindo uma Cor para os nossos dois (h1) que forão Classificados por nois mesmos*/
+    color: rgb(247, 60, 60);
+}
+/* E é desta forma que usamos o (Class) e o (id), mas lembre-se : 
+<!--- Tenha em mente que (id) é único e (Class) pode ser Multiplo.--> */
+
+/* A baixo nos estamos Classificando  o nosso Seletor Personalizado que na Verdade é um trecho de um texto onde usamos a Tag (Span) para que isso fosse possivel, qualquer dúvida veja o Documento HTML.*/
+.Span{
+    color: rgb(242, 255, 0);
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <link rel="shortcut icon" href="../Favicon Image - 192x192.png" type="image/x-icon">
+    <!-- Aqui nos vamos usar o CSS com estilo Local, veja:-->
+    <style> /* Aqui nos estamos chamando a Nossa Tag (style) e abrimos ela.*/
+
+        /* Para Evitarmos erros no Degrade vamos ter que configurar Corretamente as CSS, para fazer isso é simples.*/
+        /* Para criar as Configurações Globais das CSS basta Criar um Seletor para um (*), veja :*/
+        * { /* Aqui nos estamos Criando as Configurações Globais das CSS.*/
+            height: 100%; /* Aqui nos estamos Configurando a Altura que as CSS irão poder Alcançar na Página.*/
+            /* Height -> Altura*/
+
+        }
+
+        body{ /* Agora nos Criamos o Seletor (body {}) e dentro dele nos vamos atribuir as Nossas Configurações para este Gradiente.*/
+            background-image: linear-gradient(45deg, rgb(85, 167, 255) 5%, rgb(176, 64, 216), rgb(218, 40, 171), rgb(212, 215, 50), red); /* Aqui nos Usamos o Parâmetro (background-image :) e usamos a Função (linear-gradiente(Direção ou Ângulos em Deg, Cor Inicial e Porcentagem da Cor, Mais Cores e Porcentagem das Cores , Cor Final e Porcentagem da Cor) e por fim nos passamos os Parâmetros para esta Função.*/
+            /* Isso ja vai cria o nosso Efeito de Gradiente */
+
+            background-attachment: fixed; /* Aqui nos usamos o Parâmetro (background-attachment :) e passamos o Valor (fixed), isso fará com que o nosso Degrade se aplique á toda a nossa página e que ele seja fixo nela, o que siguinifica que ele não vai falhar em nenhum momento.*/}
+    </style>
+</head>
+<body>
+    <h1>Testando Gradiente.</h1>
+</body>
+</html>

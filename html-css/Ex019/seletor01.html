@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"> <!--OBS : É muito importante reparar nesta linha (4) do Script que tem está Tag (Meta) com os seus valores sendo (charset = "UTF-8"), póis este comando também deve existir no nosso Arquivo CSS, isso por que ele será um Arquivo Externoe ter esta Configuração lá evita erros de Ascentuação gráfica e etc...-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores Personalizados</title>
+    <link rel="shortcut icon" href="../Favicon Image - 192x192.png" type="image/x-icon">
+
+
+    <!-- Na Linha de Codigo a Baixo nos estamos criando o nosso Script CSS Externo, basta usarmos a Tag (link:css) e Passarmos no Parâmetro (href) o Path do nosso Arquivo CSS, no caso aqui nos vamos usar o Caminho Padrão do Arquivo que está setado no Parâmetro e Segurando (CTRL + Click do Mouse) nos vamos Clicar no Path do Parâmetro e vamos concordar na Viewport que vai aparecer para criarmos este Arquivo CSS Externo.-->
+    <link rel="stylesheet" href="style.css"> 
+
+
+</head>
+<body>
+    <!-- Como nos queremos que o (h1) de baixo seja um Seletor Personalizado nos vamos ter que atribuir a ele um Parâmetro que chamamos de (id = String), veja :-->
+    <h1 id="Principal">Criando Sítes com HTML e CSS</h1> <!-- Depois de termos Atribuido o Pârametro (id) a nossa Determinada Tag (h1) basta voltarmos ao Codigo CSS e Visializar como vamos usar isso Para Criarmos um Seletor Personalizado.-->
+
+    <!-- Cap 2 Aula 21 (Classificando Seletores Personalizados)-->
+    <!-- Na Aula 20 deste Capítulo nos aprendemos a criar Seletores Personalizados utilizando a Tag (id) com um Respectivo valor em String, no entanto nos não podemos Criar outro Seletor Personalizado utilizando o (id) com o Mesmo valor em String, e agora nos vamos aprender a melhor maneira para Classificarmos Seletores Personalizandos usando o (Class).-->
+
+    <!-- Obs : O que eu quis dizer com isso é que como nos ja temos um Seletor com o (id) sendo ("Principal") nos não podemos criar outro Seletor com o mesmo valor em seu (id), não podemos mais usar ("Principal") em outro (id) porque ele já existe, isto é uma regra do W3C e para resolver este Problema nos vamos aprender a Classificar Seletores Personalizados usando o (Class).-->
+
+    <!--- Tenha em mente que (id) é único e (Class) pode ser Multiplo.-->
+    <!-- Vamos supor que eu queira o (h1) da linha 27 e o (h1) da linha 34 com a mesma configuração, para isto basta usar o Parâmetro (Class = "String"), e de nomes Coerentes com o que você fará com esta Classe, isso facilita a Identificação dela no seu Documento CSS.-->
+
+    <h1 class="basico">Aprendendo HTML</h1>
+    <!--- Tenha em mente que (id) é único e (Class) pode ser Multiplo.-->
+
+    <h2>HTML Básico</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum id similique maiores magnam sit architecto et inventore ullam optio aspernatur? Sapiente fugit aliquam quod eius at dolor eum velit obcaecati.</p>
+    <h2>HTML Intermediário</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur perferendis officiis optio in nihil tempora, id vel dicta, asperiores quasi, similique ex amet! Voluptas, possimus blanditiis! Eius, atque sunt! Nemo?</p>
+    <h2>HTML Avançado</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus quae eligendi labore, recusandae excepturi harum officia, impedit dicta dolore nostrum, molestiae reprehenderit laudantium. Accusamus eum, exercitationem et repellendus asperiores esse.</p>
+
+    <h1 class="basico">Aprendendo CSS</h1>
+    <!--- Tenha em mente que (id) é único por Documento HTML e (Class) pode ser Multiplo.-->
+    <!-- Agora nos vamos voltar no nosso Documento CSS e vamos atribuir a Cor Vermelha a estes dois (h1).-->
+
+    <h2>CSS Básico</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, maxime at earum beatae neque nihil ab tenetur obcaecati, inventore omnis harum reprehenderit cumque assumenda molestias enim itaque, sed distinctio voluptate.</p>
+    <h2>CSS Intermediário</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita earum accusamus rem unde velit molestiae doloribus labore esse, eveniet sit illum saepe modi laboriosam perspiciatis eligendi voluptates sunt aut necessitatibus.</p>
+    <h2>CSS Avançado</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, labore nobis quod soluta illum, atque corrupti totam possimus quia architecto nihil. Debitis expedita consequatur voluptates maiores id numquam eos excepturi.</p>
+
+    <!-- A Baixo eu vou explicar de maneira bem breve a Tag (Span) que nos permite Classificar um Seletor Personalizado e que com essa Tag (Span) nos podemos fazer isso com trechos de textos, veja:-->
+    <p><span class="Span">Explicando</span> a Tag (Span)</p>
+    <!-- Agora vamos voltar para o Documento CSS onde nos vamos acessar este Seletor Personalizado que nos Classificamos.-->
+
+    <!-- Obs : Nos também podemos utilizar mais de uma Classe em um elemento, não precisa separar por virgula (,) apenas por espaço.
+    Obs : Nos também podemos usar um (id) e uma (Class) em um elemento
+    Obs : Se usarmos o (id) e a (Class) no mesmo elemento as Configurações do (id) irão sobrepor as Configurações de (Class).
+    Na dúvida pergunta isso ao Chat Gpt porque eu to com um sono.-->
+</body>
+</html>

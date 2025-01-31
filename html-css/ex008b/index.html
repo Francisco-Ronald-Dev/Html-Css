@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras Formatações</title>
+    <link rel="shortcut icon" href="c:\Users\Ronald\OneDrive\Documentos\Estudos\Exercicios\html-css\ex004\favicon_io\android-chrome-512x512.png" type="image/x-icon">
+</head>
+<body>
+    <h1>Outras Formatações</h1>
+    <p>O Comando Document.GetElementById('teste') é escrito em JavaScript</p> <!-- Eu vou resrevar esta linha para este Paragrafo onde não aplicamos nenhuma tag, e o proximo paragrafo será exatamente o mesmo pórem com a tag (code), você verá que essa diferença á Olho nu não é notada mas eu recomendo que você preste mais atenção e repare como as letras e caracteres estão devidamente separados e com a mesma largura, isso é mais adequado visualmente falando.-->
+
+    <p>O Comando <code>Document.GetElementById('teste')</code> é escrito em JavaScript</p> <!-- Rode o codigo e veja.-->
+
+    <pre> <!-- Aqui nos estamos usando a tag (pre) que é capaz de criar Indentação em nossa Pagina e também é capaz de criar quebra de linha-->
+        <code> <!-- Aqui nos estamos usando a tag (code) que nos permite escrever como a tag (p) e as informações escritas também são eibidas na página.-->
+
+            var value = 5
+            if value % 2 == 0:
+                print("par")
+            else:
+                print("impar")
+
+        </code>
+    </pre>
+
+    <h2>Citações Simples</h2>
+
+    <p>Como diz o pai de um amigo <q>o computador é um burro muito rápido</q></p> <!-- A tag (q) que usamos aqui coloca o nosso texto entre aspas, isso pode parecer desnecessario mas é algu bem Semantico-->
+
+    <h2>Citações Completas</h2>
+
+    <blockquote> Aqui eu deixo uma citação com a tag (blockqoute)</blockquote> <!-- Aqui nos usamos a tag (blockqoute) póis ela é bem interessante quando se trata de citações já que ela destaca bem o texto colocando ele um pouco mais para dentro da página.-->
+
+    <!-- Na tag (blockqoutr) nos podemos usar o Parâmetro (cite) que se refere ao caminho (URL) de onde pegamos o texto da nossa tag (blockqoute), ex :-->
+
+    <blockquote cite="www.google.com"> Este é o texto da tag (blockqoute)</blockquote> <!-- Veja -->
+
+    <h2> Abreviações</h2>
+
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> estou adorando</p> <!-- Aqui nos estamos usando a tag (abbr) e também estamos usando o seu Parâmetro (title) e passamos uma Informação neste Parâmetro, quando passarmos o Mouse por cima de (HTML) um Popup será exibido em nossa página mostrando a informação que passamos antes.-->
+    <p>Estou estudando <abbr title="Cascading Style Sheets">CSS</abbr> estou adorando</p> <!-- Aqui nos estamos usando a tag (abbr) e também estamos usando o seu Parâmetro (title) e passamos uma Informação neste Parâmetro, quando passarmos o Mouse por cima de (CSS) um Popup será exibido em nossa página mostrando a informação que passamos antes.-->
+    
+    <h2>Texto Invertido</h2>
+
+    <bdo dir="rtl"> Estamos apendendo HTML.</bdo> <!-- Aqui nos estamos usando a tag (bdo) essa tag inverte o nosso texto, ela só possui dois parâmetros, sendo eles : (ltr) que é left to right e (rtl) que é right to left, o texto dentro da tag (bdo) será invertido.-->
+
+</body>
+</html>

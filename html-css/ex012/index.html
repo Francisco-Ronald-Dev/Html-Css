@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídios com HTML5</title>
+    <link rel="shortcut icon" href="../Favicon Image - 192x192.png" type="image/x-icon">
+</head>
+<body>
+    <h1>Inserindo Vídios Hospedados Localmente.</h1>
+    <p>Este Vídio está Hospedado no meu Próprio Servidor.</p>
+
+    <!-- Nos vamos Utilizar o mesmo Vídio duas Vezes para explicar umas coisas.-->
+
+    <!-- OBS : Eu Recomendo utilizar os Seguintes formatos de Vídio em seu Site :
+    Ogv, Mp4 e Wav -->
+
+    <!-- Aqui eu Utilizei um Vídio em Formato (mkv) mas não é Recomendado fazer isso porque algums navegadores não suportão este Formato de Arquivo de Vídio.-->
+    <video src="midias/2024-08-10 11-18-30.mkv" controls width="500px"></video> <!-- Aqui nos Simplesmente Utilizamos a Tag (video : src) e passamos o Caminho do nosso Vídio para o Parâmetro (src) e adicionamos o Parâmetro (controls) para que Possamos Dar Play e Pausar o nosso Vídio, também adicionamos o Parâmetro (width) e passamos um valor de "500px", este Último Parâmetro que Adicionamos serve para Diminuir a Largura do nosso Vídio na nossa Página.-->
+
+    <video controls width="500px" poster="imagens/Thumb do CJ.jpg"> <!-- Aqui nos usamos a Tag (video) tiramos os Parâmetros que Vêm    por Padrão e adicionamos 3 Parâmetros, o Primeiro foi (controls) para que o úsuario do Site possa dar Play ou Pausar o Vídios, o Segundo Parâmetro é (width) que serve para limitarmos a Largura do nosso Vídio e oÚltimo Parâmetro que Aficionamos é o (poster) que serve para adicionarmos uma "Thumb" para o nosso Vídio e agora nos vamos abrir a Tag.-->
+        
+        <source src="midias/Intro_Scene_720P.mp4" type="video/mp4"> <!-- Aqui nos Chamamos a tag (source : src) e agora nos vamos Passar o Caminho do nosso Vídio para o Parâmetro (src) e vamos passar o Tipo do nosso Arquivo de Vídio para o Parâmetro (type), veja.-->
+
+        <!-- Obs : Como o Úsuario pode abrir e acessar o nosso Site de qualquer navegador é bom que nos possamos colocar todos os Vidios de Todos os Formatos aqui.-->
+        <!-- Para Vidios no Formato (mp4) o valor do Parâmetro (type) deve ser "video/mp4"-->
+        <!-- Para Vidios no Formato (ogv) o valor do Parâmetro (type) deve ser "video/ogv"-->
+        <!-- Para Vidios no Formato (wav) o valor do Parâmetro (type) deve ser "video/mp4"-->
+        <!-- Para Vidios no Formato (webm) o valor do Parâmetro (type) deve ser "video/webm"-->
+
+        <!-- É Bom ressaltar que a Ordem do Script é de imensa Importancia, veja, se o Vídio da linha 23 não for reproduzido a mensagem abaixo na linha 32 será exibida.-->
+        <p>Não foi possivel Reproduzir o Vídio.</p>
+
+    </video>
+
+    <h1>Inserindo Vídios do YouTube.</h1> <!-- O YouTube é um Serviço de Hospedgem de Vídios que os podemos usar para diminuir o Custo Financeiro do Gasto da nossa Banda Larga de Dados para o Cliente, basta Escolher um Vídio de lá,clicar em "Compartilhar" e depois clicar em "Incorporar", isso vai gerar um Codigo em HTML5 adequado para pormos em nosso site, basta Copiar este Codigo e colarmos aqui no VisualCode.-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y?si=XWZmxnuYYXj5Z8ZN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <!-- Esta Linha 17 interira é o Codigo que colamos do YouTube.-->
+</body>
+</html>

@@ -1,0 +1,4 @@
+-=-=- DETECÇÃO DE FONTES -=-=-=-
+1 - Se a Fonte desejada estiver em um Site basta usar A Extensão (Font Ninja) e então pesquisar a Fonte encontrada no site (dafont.com) ou no site (Google Fonts), nestes sites você pode baixar a fonte desejada e usa-las em seu Site.
+
+2 - Se a Fonte desejada Estidever dentro de uma Imagem de um Site você deve acessar um destes Sites (whatfontis.com) ou (fontsquirrel.com) ou (myfonts.com), em todos estes Sites que identificam Fontes em Imagens você só ira precisar da Imagem que tem a fonte desejada e o processo para identificar ela é bem simples.

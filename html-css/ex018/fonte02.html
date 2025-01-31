@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <link rel="shortcut icon" href="../Favicon Image - 192x192.png" type="image/x-icon">
+
+    <style>
+        /* Logo abaixo nos estamos usando o (@) para criarmos um Seletor Especial, que, no caso é o nosso (@font-face{})*/
+        @font-face {
+            /* Agora nos estamos usando a Tag (font-family) aqui em baixo e vamos atribuir um Nome a nossa Fonte, o Nome que vamos atribuir deve estar entre (''') ou ("")*/
+            font-family: 'Love';
+
+            /* No parâmetro abaixo nos temos que passa a URL da nossa Fonte mas como ela está instalada na Maquina nos vamos passar apenas o nome da nossa fonte, tudo entre ('') ou (""), é bom tomar cuidado, póis o nome da fonte deve ser o mesmo nome de seu Arquivo Instalado na Maquina, se tiver espaço coloque espaço, se tiver Anerline coloque Anderline.*/
+            /* Obs : Caso o Arquivo da Fonte esteja dentro de uma pasta a URL deve acessar está pasta, caso o contrario não dará certo usar a fonte, no nosso caso aqui o Arquivo da Fonte está dentro de uma pasta.*/
+            /* Veja abaixo que nos acessamos a pasta e o Arquivo desta maneira : ('.Fontes/love larry ttf.ttf'). Mas nos também poderiamos ter acessado a mesma pasta e o mesmo arquivo desta forma : ('Fontes/love larry ttf.ttf'), isso não teria problema nenhum e funcionaria da mesma forma.*/
+            src: url('./Fontes/love larry ttf.ttf') format('truetype'); /* Aqui nos estamos adicionando o Parâmetro (format()), neste Parâmetro nos vamos passar um valor que corresponda ao Formato da nossa fonte, veja os Valores que Representão os Formatos de Fontes logo a baixo.*/
+
+            /* Nos também usamos a Tag (font-weight) e atribuimos o valor (normal), fizemos isso por que a nossa Fonte deve manter-se no normal e evitar algumas variações como o Negrito por exemplo.*/
+            font-weight: normal;
+
+            /* Nos também usamos a Tag (font-style) e atribuimos o valor (normal)*/
+            font-style: normal;
+
+            /* Tipos de (format()) : 
+                -> opentype (otf)
+                -> truetype (ttf)
+                -> embedded-opentype
+                -> truetype-aat (Apple advenced Typography)
+                -> svg*/
+
+            /* Depois de tudo isso volte para a Tag (font-family) declarada no inicio deste Seletor.*/
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        h1{
+            /* Agora vamos usar a Fonte que criamos aqui no nosso (h1), para isso basta usar a Tag (font-family) e atribuir a nossa Fonte nos Parâmetros da Tag, lembrando que devemos usar ('') ou ("") quando fizermos isso.*/
+            font-family: 'Love', Times, serif;
+
+            /* Agora nos vamos usar a Tag (font-weight) e vamos passar o valor ('normal') para evitar que a fonte use Variações como o Negrito ou Italico mas se mantenha no Normal.*/
+            font-weight: normal;
+            font-size: 3em;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Títulos</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo atque ad omnis magni cupiditate tempore cum vitae, laudantium doloribus eligendi corrupti voluptatum aperiam ab inventore praesentium! Nostrum sint repellat voluptatem?</p>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <link rel="shortcut icon" href="../Favicon Image - 192x192.png" type="image/x-icon">
+
+    <!-- Cap 2 Aula 24 (Parte 1)-->
+    <!-- Nesta Aula nos vamosestudar os Modelos de Ciaxa mas vamos ver Apenas Caixas do Tipo (Box-Level) e na Parte 2 desta Aula nos vamos ver Modelo de Caixas (InLine-Level).-->
+
+    <style>
+        h1{ /* A Tag (h1) possu um Modelo de Box (Box-Level).*/
+
+            /* Se você quiser fazer esta Tag (h1) ter um Modelo de Box (InLine-Level) basta usar o seguinte comando:*/
+            /*display: inline;*/
+            /* Isso vai fazer com que a Tag (h1) tenha um Modelo de Box (Inline-Level).*/
+            /* Nos também podemos usar (display: inline-block;) que vai misturara as Caracteristicas dos dois tipo de (Model Box).*/
+
+            background-color: coral;
+            height: 300px; /* Altura de 300px */
+            width: 300px; /* Largura de 300px */
+
+            border-width: 10px; /* O (border-width) é a Largura da Borda ou a Espessura da Borda.*/
+            border-style: solid; /* O (border-style) é o Stilo da Borda.*/
+            border-color: cornflowerblue; /* O (border-color) é a Cor da Bordar.*/
+
+            /* Nos podemos usar (ShortHands) para Simplificar a Criação da Borda, primeiro é necessario que você teha em mente a Ordem que utilizamos anteriormente na Criação da Borda e Aplique esta mesma Ordem só que no (ShortHand), veja:*/
+            /*border : 10px solid cornflowerblue;*/
+            /* Obs : Perceba que para CRiarmos a Borda com o (ShortHand) nos usamos apenas a Tag (border) e não separamos os Parâmetros por Virgula (,).*/
+
+            /* Agora nos vamos adicionar um Elemento que faz parte da Ânatomia do (Module-Box), nos vamos adicionar um Padding.*/
+            /* Obs : Repare na Ordem como nos estamos dicionando o Padding, está Ordem é a correta e sempre deve ser assim ao adicionar um Padding.*/
+            padding-top: 10px; /* Aqui nos estamos usando (padding-top: 10px;) para criarmos um espaço no Topo para o Nosso Padding.*/
+            padding-right: 10px; /* Aqui nos estamos usando (padding-right: 10px;) para criarmos um espaço na Direita para o Nosso Padding.*/
+            padding-bottom: 10px; /* Aqui nos estamos usando (padding-bottom: 10px;) para criarmos um espaço em Baixo para o Nosso Padding.*/
+            padding-left: 10px; /* Aqui nos estamos usando (padding-left: 10px;) para criarmos um espaço na Esquerda para o Nosso Padding.*/
+            
+            /* Obs : O Padding serve para criar uma borda invisivel que "afasta" o Conteúdo da Box das Margens ou das Borsas da Box/Caixa, isso cria um espaço bem agradavel e notavel no Conteúdo de uma Tag.*/
+
+            /* Nos podemos usar (ShortHands) para Simplificar a Criação do Padding, primeiro é necessario que você teha em mente a Ordem que utilizamos anteriormente na Criação do Padding e Aplique esta mesma Ordem só que no (ShortHand), veja:*/
+            /*padding : 10px 10px 10px 10px;*/
+            /* Obs : Perceba que para CRiarmos a Borda com o (ShortHand) nos usamos apenas a Tag (padding) e não separamos os Parâmetros por Virgula (,).*/
+
+            /* Agora nos vamos adicionar um Elemento que faz parte da Ânatomia do (Module-Box), nos vamos adicionar a Margin.*/
+            /* Obs : Repare na Ordem como nos estamos dicionando o Padding, está Ordem é a correta e sempre deve ser assim ao adicionar a Margin.*/
+            margin-top: 10px; /* Aqui nos estamos usando (margin-top: 10px;) para criarmos um espaço no Topo para a Nossa Margin.*/
+            margin-right: 10px; /* Aqui nos estamos usando (margin-right: 10px;) para criarmos um espaço na Direita para a Nossa Margin.*/
+            margin-bottom: 10px; /* Aqui nos estamos usando (margin-bottom: 10px;) para criarmos um espaço em Baixo para a Nossa Margin.*/
+            margin-left: 10px; /* Aqui nos estamos usando (margin-left: 10px;) para criarmos um espaço na Esquerda para a Nossa Margin.*/
+
+            /* Obs : O Margin serve para criar uma borda invisivel que "afasta" o Conteúdo da Box do Conteúdo de outras Box's.*/
+
+            /* Obs : Para fazer com que o Coneúdo de uma (Box-Model) de uma determinada (Tag) fique centralizada na Página você pode usar este Comando:*/
+            /* (margin : auto;).*/
+
+            /* Nos podemos usar (ShortHands) para Simplificar a Criação da Margin, primeiro é necessario que você teha em mente a Ordem que utilizamos anteriormente na Criação da Margin e Aplique esta mesma Ordem só que no (ShortHand), veja:*/
+            /*margin : 10px 10px 10px 10px;*/
+            /* Obs : Perceba que para CRiarmos a Borda com o (ShortHand) nos usamos apenas a Tag (margin) e não separamos os Parâmetros por Virgula (,).*/
+
+            /* Obs : Se você quiser centralizar o (ShortHand) da Tag (margin) basta usar o Parâmetro (auto), veja :*/
+            /*margin : 10px auto 10px auto;*/
+
+
+            /* Nos também vamos criar outro Elemento que faz Parte da Ânatomia de uma (Box-model), agora nos vamos criar um (Out-Line), veja:*/
+            outline-width: 10px; /* O (outline-width) é a Largura da Borda externa*/
+            outline-style: dashed; /* O (outline-style) é o Stilo da Borda externa.*/
+            outline-color: rgb(0, 255, 187); /* O (outline-color) é a Cor da Bordar externa.*/
+
+            /* Obs : O (OutLine) é um Tracechado que existe dentro da (Margen).*/
+            /* Obs : No Inspencionar do seu Navegador não será exibido o (OutLine) mas você verá que ele existe nos codigos CSS ao Inspencionar a Página HTML, e você também pode auterar o valor do (OutLine) por lá e será capaz de visualizar ele mudando.*/
+
+            /* Nos podemos usar (ShortHands) para Simplificar a Criação do OutLine, primeiro é necessario que você teha em mente a Ordem que utilizamos anteriormente na Criação do OutLine e Aplique esta mesma Ordem só que no (ShortHand), veja:*/
+            /*outline : 10px dashed rgb(0, 255, 187);*/
+            /* Obs : Perceba que para Criarmos a Borda com o (ShortHand) nos usamos apenas a Tag (outline) e não separamos os Parâmetros por Virgula (,).*/
+
+        }
+
+        a{ /* A Tag (a) possu um Modelo de Box (InLine-Level).*/
+            border-width: 10px; /* O (border-width) é a Largura da Borda pu a Espessura da Borda.*/
+            border-style: solid; /* O (border-style) é o Stilo da Borda.*/
+            border-color: brown; /* O (border-color) é a Cor da Bordar.*/
+
+            /* Se você quiser fazer esta Tag (a) ter um Modelo de Box (Box-Level) basta usar o seguinte comando:*/
+            /*display: block;*/
+            /* Isso vai fazer com que a Tag (a) tenha um Modelo de Box (Box-Level).*/
+
+            /* Nos também podemos usar (display: inline-block;) que vai misturara as Caracteristicas dos dois tipo de (Model Box).*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplos de Caixas Box-Level</h1> <!-- A Tag (h1) é uma Tag com Modelo de Caixa (Box-Level).-->
+    <p>Parágrafos também são Exemplos de Box-Level <a href="#">mas os Links são exemplos de Caixa (InLine-Level)</a> Vamos ver como tudo isso funciona.</p> <!-- Obs : A Tag (p) é do Modelo (Box-Level), a Tag (a) de Links é do Modelo (InLine-Level) mas vale ressaltar que nos usamos a HasTag (#) Apenas para manter a "Propriedade" do Link mas ele não nos levará a lugar nenhum.-->
+
+    <!-- Obs : (User-Agents) é o tema Padrão que o CSS do nosso Navegador, seja (Crhome,FireRox,Google) dá à nosso Documento (Html).-->
+
+    <!-- Obs : Sempre que você Inspencionar o seu Documento Html em um Navegador, você será capaz de ver as Propriedades dele e se você notar que uma Tag como é o caso do (h1) possui a Seguinte Propriedade (display : Block;) isso siguinifica que está Tag é do Tipo (Box-Level).-->
+
+    <!-- Obs : A Tag que possuir uma Propriedade assim (dispay : InLine-Block;) será uma Tag com um Model Box de (InLine-Block).-->
+    
+    <!-- Obs : Ao Inspencionar o seu Documento (Html) em algum Navegador você pode ver se a sua Tag Selecionada tem ou Não elementos como (Padding, Margin, OutLine e etc...) se no lugar destes Elementos tiver um Sinal de (-) siguinifíca que a sua Tag não possui este Elemento.-->
+
+    <!-- Certo agora vamos para a Tag (Style) fazer algumas Alterações no Modelo da nossa Caixa da Tag (h1) e das demais Tag's.-->
+</body>
+</html>

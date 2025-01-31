@@ -1,0 +1,24 @@
+--- Cap 2 Aula 23 ---
+Aqui nesta Aula nos vamos estudar sobre (Box Model) ou (Modelo de Caixa) que são conceitos bem seimples de serem entendidos e existem tanto no HTML quanto no CSS.
+
+Quando você abre um Documento HTML e digita algu como :
+<h1>Olá Mundo</h1>
+
+Este comando vai gerar um Texto na tela escrito ("Olá Mundo") no entanto o Conteúdo exibido na Tela também é uma Caixa ou uma Box e esta Box do Conteúdo exibido também tem uma Ânatomia que nos vamos ver melhor na Proxima Aula do Cap 2 que vai ser a Aula 24, essa Proxima Aula terá vários exercícios na Prática e nos vamos poder ver como isso funciona.
+
+Abaixo eu vou deixar apenas os Elementos que Compoem esta Caixa do Conteúdo Exibido mas nos vamos explicar eles melhor na Aula 24 do Cap 2:
+
+- Altura (Height)
+- Largura (width)
+- Borda (Border)
+- Preenchimento (Padding)
+- Margem (Margin)
+- Contorno/Traçado (Outline)
+-
+Nos também temos dois Tipos de Caixa ,sendo eles :
+
+- Box-Level : Pula Pra Proxima Linha Criando uma Caixa que ocupa 100% da Largura (Width) da Viewport e ao Terminar ele pula para a Proxima Linha novamente.
+
+- Inline-Lever : No Inline-Level o A Box será criada ao lado do texto e não na Proxima linha dele e quando a Box acabar o texto irá continuar de onde ela (Box) Parou e não da Proxima Linha.
+
+Obs : Sempre que nos usamos uma (<div>) nos estamos criando uma Caixa do Tipo (Box-Level) e sempre que nos usamos um (<span>) nos estamos criando uma Caixa do tipo (Inline-Level), Para mais Exemplos de Tags que são (Box-Level) ou (InLine-Level) olhe a Foto que deixamos junto deste Arquivo, ela tem mais exemplos sobre isso.

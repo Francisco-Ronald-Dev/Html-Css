@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <link rel="shortcut icon" href="../Favicon Image - 192x192.png" type="image/x-icon">
+
+    <!-- No Capítulo 2 Aula 13 Nos Importamos uma fonte usando como parâmetro uma (URL), que foi bastante utilizada mas eu não consegui o link da fonte então irei tentar esplicar sem ela o conteúdo da aula 13 do Cap 2.-->
+
+    <style> /* Aqui nos estamos chamando a Tag (style) */
+        body{ /* Aqui nos estamos Criando o Seletor (body{}) */
+            font-family: Arial, Helvetica, sans-serif; /* Aqui nos estamos passando o parâmetro (font-family) como (Arial, Helvetica, sans-serif), isso siguinifica que o Site vai tentar usar a Font Arial, se não for possivel ele vai tentar usar a Fonte Helvetica e se não for possivel ele vai tentar usar a Fonte Sans-serif. */
+
+            /* Medidas Absolutas
+            cm, mm, in, px, pt, pc
+
+
+            Medidas Relativas
+            em, ex, rem, vw, vh, %
+            16 px geralmente é igual a 1em
+            */
+
+            /* Obs : Normalmente o Tamanho das Fontes é de 16px.
+            Obs : É recomendado utilizarmos px ou em para o Tamanho das nossas Fontes.*/
+
+            font-size: 1em;
+
+            /* CAPÍTULO 2 (AULA 13) -> Peso das Fontes*/
+            /* Aqui nos vamos usar a Tag (font-weight) que siguinifíca o Péso da Fonte. Esta Tag tem algums valores constantes que valem muito a pena serem vistos, estes valores são (lighter,normal, bold, bolder)*/
+            
+            /*font-weight: bolder ;*/ /* Vale ressaltar que nem todas as vontes aceitam o mesmo valor Min e Max, por exemplo, existem 
+            
+            fontes que não aceitam o valor (900), póis, para algumas fontes este valor é muito grande.*/
+
+            /*Também podemos misturar o Peso das fontes com outras TAG's que isso irá gerar um efeito bem interessante, veja:*/
+            /*font-style: italic;*/
+            /*text-decoration: underline;*/
+
+        }
+        h1, h2{ /* Aqui nos Criamos um Seletor para o H1 e o H2.*/
+            /*font-family: Arial, Helvetica, sans-serif;*/
+
+            /* Aqui nos vamos criar um (ShortHand) mas como vamos fazer isso para Fontes, vamos usar um (ShortHand Font)
+
+            Explicação : Sabe quando você tem varios (if) um dentro do outro e quer tirar isso para usar apenas um unico (if), póise, aqui nos usamos muitas Tag's para criarmos os efeitos nas fontes, o (ShortHand) é uma tecnica que utiliza apenas uma liha de codigo e aplica todos os efeitos que tinham antes com aquele amontuado de Tag's, veja : */
+
+            /* Para que funcione devemos usar a Tag nesta Ordem (font-style -> font-weight -> font-size -> font-family)*/
+            font: italic bolder 1em "Arial", "sans-serif" ;
+
+            /* Se você quiser auterar a fonte usando um (ShortHand) mas não tiver um Parâmetro, então, não aplique o Parâmetro mas mantenha a ordem, veja :*/
+            /* font: bolder 1em "Arial", "sans-serif" ;*/
+            /* Aqui nos não aplicamos o Primeiro Parâmetro mas mantivemos a Ordem.*/
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis sunt modi optio? Est atque aliquid, debitis odit nesciunt commodi, reprehenderit expedita veritatis possimus amet similique delectus cupiditate at vitae nisi!</p>
+
+    <h2>Subtítulo do exercicio</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quis molestias inventore ad temporibus harum autem blanditiis dolore voluptatum aliquam magnam ducimus animi optio doloremque rem corporis reiciendis, voluptate quod.</p>
+</body>
+</html>

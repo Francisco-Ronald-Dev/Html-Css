@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <!------------------------------------------->
+    <!-- Abaixo nos vamos configurar a tag (style) para que todas as outras tags (styles) da pagina obedeção a está que estamos configurando logo abaixo.-->
+    <style>
+        mark {
+            background-color: aqua;
+        }
+    </style>
+     <!------------------------------------------->
+</head>
+<body>
+    <h1>Principais Formatações</h1>
+    <h2>Negrito / Destaque</h2>
+
+    <p> Nesta Frase temos uma <b>Parte em Negrito</b></p> <!-- Vamos usar a tag (b) que Não é Semantica, é algum Visual apenas-->
+
+    <p> Nesta Frase temos uma <strong>Parte em Negrito</strong></p> <!-- Vamos usar a tag (strong) que é Semantica e cheia de Siguinificado, usamos esta tag quando queremos infatizar claramente que esta parte do Texto deve estar em Negrito.-->
+
+    <h2>Ítalico / Ênfase</h2>
+    <p> Nesta frase, temos um termo em <i>Ítalico usando a tag (i)</i></p> <!-- Aqui nos estamos utilizando a tag (i) que Não é Semantica para tornar determinada parte do nosso Texto em Ítalico.-->
+
+    <p> Nesta frase, temos um termo em <em>Ítalico usando a tag (em) que é semantica</em></p> <!-- Aqui nos estamos utilizando a tag (em) que é totalmente Semantica para tornar determinada parte do nosso Texto em Ítalico.-->
+
+    <h2>Podemos marcar um texto utilizando a Tag (mark)</h2>
+
+    <p> Este texto está <mark style="background-color: limegreen;">marcado</mark> devido a tag (mark)</p> <!-- Vale resaltar que pra usar essa tag eu tive que selecionar o texto desejado e segurar Ctrl + Shift + P para Escolher a Tag com Abreviação, só assim deu certo.-->
+
+    <!-- Na nossa tag (mark) nos usamos o Parâmetro (style) que já é algu mais voltado para o CSS, depois passamos os Valores do parâmetro como "background color" e a Cor desejada para esta marcação em expecifico.-->
+
+    <!-- A tag (big) aumenta um pouco a fonte do texto mas não vale apena ser utilizada, póis , não é Semantica
+     A Tag (small) diminui um pouco a fonte do texto mas vale a pena ser Utilizado, póis , é Semantico.-->
+
+    <h2> Texto deletado</h2>
+
+    <p> Aqui nos temos um <del> texto deletado</del></p> <!-- Semantico -->
+
+    <h2> Texto Inserido</h2>
+
+    <p> Aqui nos temos um <ins>Texto Inserido</ins></p> <!-- Semantico-->
+
+    <h2> Texto Sublinhado</h2>
+
+    <p> Aqui nos temos um <u>Texto Sublinhado</u></p> <!-- Não Semantico-->
+
+    <h2>Texto Subrescrito</h2>
+
+    <p>Um bom exemplo disso é está equação x <sup>20</sup> + 4</p> <!-- A Tag (sup) é para colocar um Caractere menor em cima-->
+
+    <h2>Texto Subscrito</h2>
+
+    <p>Um bom Exemplo disso é a Formula da Água H <sub>2O</sub></p> <!-- A Tag (sub) é para colocar um Caractere menor em Baixo-->
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    /*height:  100%;*/
+}
+
+body{
+    background-image: linear-gradient(to right, #F1D8C9, #F2C3A7);
+}
+
+main{
+    background-color: white;
+    border-radius: 50px; /* O Parâmetro (border-radius) serve para que possamos arredondar as Bordas em um valor que nos definimos, aqui no meu caso foi 50px.*/
+    box-shadow: 15px 15px 15px #9f6565; /* Aqui nos estamos usando o Parâmetro (box-shadow) que tem 4 Parâmetros ,sendo eles (Quantos Pixels a Sombra vai andar para á Direita, Quantos Pixels a Sombra vai para baixo, Quantos Pixels a Sombra vai espalhar e Quantos Pixels a Somra terá de Transparencia.*/
+
+    width: 600px;
+   
+    padding: 10px; /* O Parâmetro (padding) é para deixarmos um espaço adequado nas bordas */
+    margin: auto; /* O Parâmetro (margin = auto;) serve para centralizarmos as coisas no meio da Tela automaticamente mesmo se o Tamanho da Viewport sofrer auterações isso continuará funcionando.*/
+
+}
+
+h1{
+    color: #F39209;
+    text-align: center; /* Aqui nos usamos o Parâmetro (text-align : center;) para centralizarmos o nosso Texto no Centro.*/
+    box-shadow: 5px 5px 50px #af6907;
+}
+
+h2{
+    color: #125189;
+}
+
+p{
+    text-align: justify;
+}

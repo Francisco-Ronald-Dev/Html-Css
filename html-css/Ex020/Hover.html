@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <link rel="shortcut icon" href="../Favicon Image - 192x192.png" type="image/x-icon">
+    <!-- Cap 2 Aula 21, Pseudo-Class-->
+    <!-- Aqui nos vamos ver um Exemplo de (hover)-->
+    <!-- Neste Exemplo nos vamos criar uma Dic (div) e vamos criar um Paragráfo (p) dentro da nossa Div, e vamos usar um Pseudo-Class para Interagirmos com a nossa Div atravez dos Eventos (Events) mas no entanto vamos aprender a Esconder o Paragráfo que está dentro da Div para que ele não seja alterado pelos Eventos, você vai ver preste atenção:-->
+
+    <!-- Aqui nos também vamos usar o CSS Interno.-->
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif; /* Aqui nos estamos apenas atribuindo uma Fonte para os Textos da nossa Página.*/
+        }
+
+        /* Preste Bastante Atenção na Forma que Estamos Declarando Este Seletor Abaixo.*/
+        div > p{ /*Estamos Criando este seletor com (div > p), póis este é um Seletor Aplicado para Todos os Elementos/Tag's (p) dentro do Elemento/Tag's (div), Então tudas as Configurações que fizermos agora servirão apenas para todos os Paragráfos (p) dentro da Div (div).*/
+
+        display: none; /* Aqui nos estamos usando a Propriedade (display :) e passando o Parâmetro (none;) e isso faz com que os Paragráfos (p) dentro da Div (div) se escondão da tela.*/
+
+        }
+
+        /* Utilizando a Mesma Lógica nos Também podemos usar uma Pseudo-Class assim:*/
+        div:hover > p {
+            display: block; /* Aqui nos estamos usando a Propriedade (display:) e estamos passando o Parâmetro (block;) isso fará com que os nossos Paragráfos dentro da Div (div) fiquem "Visiveis na Tela" novamente quando passarmos o Mouse por cima deles.*/
+            /* obs : Quando nos retirarmos o Mouse de Cima da Div (div) os Paragráfos dentros da Div (div) irão ficar "Escondidos da Tela" novamente, isso devido a Ordem de Procedencia do Script,Póis nos ytemos um Seletor que esconde o Paragrafo (p) dentro da Div (div) e este Seletor vem primeiro no Script.*/
+            color:blue ; /* O Paragráfo (p) ficará Azul também :) */
+        }
+
+        /* Na linha de codigo abaixo nos estamos criando um seletor Para as Div (div) com uma Pseudo-Classe em que o Evento definido é o (:hover), quando o Mouse passar por cima da Div ela ficará vermelha, menos o Paragráfo (p) da Div(div) porque ele está "Escondido da Tela" graças ao que fizemos mais em cima neste Script.*/
+        div:hover {
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Exemplo de Hover</h1>
+    <p>Passe o Mouse sobre o texto abaixo</p>
+    <div> <!-- Aqui nos estamos criando a nossa Div-->
+        Passe o Mouse Aqui
+        <p>TEXTO ESCONDIDO...</p> <!-- Aqui nos estamos Criando um Paragráfo (p) dentro da nossa Div (div).-->
+        <!-- Obs : Este Paragráfo (p) não sofrerá Auterações pelos Eventos da Div, isso póis nos vamos esconder este Paragráfo (p) dentro da Div (div) com a ajuda dos Seletores.-->
+    </div>
+    <!-- Agora que nos criamos a "Estrutura" da nossa Página eu quero que você volte um pouco para o Topo do Script onde nos estamos Mechendo com os Seletores.-->
+
+</body>
+</html>

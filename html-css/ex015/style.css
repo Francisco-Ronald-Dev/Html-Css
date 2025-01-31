@@ -1,0 +1,15 @@
+@charset "UTF-8"; /* Ao criarmos o nosso arquivo CSS é bom colocarmos este Comando (@charset "UTF-8";) isso vai garantir uma ótima compatibilidade com a nossa Página Html.*/
+
+/* Obs : Tudo que começar com (@) E QUE FOR DECLARADO NO iNICIO DO NOSSO sCRIPT DO css É UMA rEGRA, EXISTEM VÁRIAS MAS NOS VAMOS APRENDENDO ELAS AOS POUCOS.*/
+
+body {background-color: aquamarine;
+    text-align: justify;
+    font-size: 80px;}
+
+h1 {
+    color: blue;
+}
+
+/* UUsar o CSS Externo é muito versatio póis ele vai se aplicar á todas as páginas que "Herdarem" dele.*/
+
+/* OBS : Existe uma Hierarquia na Aplicação dos CSS, o Que vem Primeiro é o (Inline), em Segundo o (Local) e o Terceiro é o (Externo) mas o (Externo) é o mais Versatio.*/

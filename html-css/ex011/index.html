@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="c:\Users\Ronald\OneDrive\Documentos\Estudos\Exercicios\html-css\Favicon Image - 192x192.png" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Tente abrir este site em outros dispositivos ou simplesmente diminua e aumente o tamanho da sua janela/viewport</p>
+
+    <picture> <!-- Aqui nos vamos usar a Tag (Picture) que serve para trabalhar com Imagens e é isso que vamos fazer.-->
+        <!-- <source media="(max-width: 200px)" srcset="Imagens\foto-p.png" type="image/png"> -->
+
+        <source media="(max-width: 750px)" srcset="Imagens/foto-p.png" type="image/png"> <!-- Aqui nos estamos carregando a Imagen P (Imagem Pequena).-->
+
+        <source media="(max-width: 1050px)" srcset="Imagens/foto-m.png" type="image/png"> <!-- Aqui nos estamos usando a Tag (source media : type) e vamos usar está Tag para definir qual Imagen deve ser Carregada de acordo com o Tamanho da nossa Janela/Viewport. O Parâmetro (media) da Tag por Padrão vem com o valor de ("min_width") nos queremos trabalhar com o valor Maximo, portanto, vamos mudar este Parâmetro para ("max_width"), agora nos devemos dar um Valor para Este Parâmetro e este Valor deve ser a Soma da Largura da nossa Imagen + 50 Pixels que é aproximadamente a Largura da nossa Barra de Rolagem Horizontal (A Barra De Rolagem que fica na parte de baixo do nosso site) nos fazemos este Calculo,póis não queremos esta Barra de Rolagem Horizontal em nosso Site, ela não é agradavel e é muito desconfortavel de utiliza-la, vale ressaltar que ao atribuimos o valor resultante do nosso Calculo para o Parâmetro ("max_width") nos também devemos colocar os Caracteres "px" para indicar que são Pixels, cuidado com este pequenos detalhes porque eles são muito importantes. Agora voce deve reparar que nesta Tag  nos Temos o Parâmetro (scrset) este Parâmetro deve ser o Caminho da nossa Imagem e o Ultimo Parâmetro (type) deve ser o tipo da nossa imagem no nosso caso será ("image/png").-->
+
+        <!-- Agora que terminei a Explicação quero dizer que na Linha de Codigo 18 nos carregamos a Imagem M (Imagem Média).-->
+
+        <img src="Imagens/foto-g.png" alt="Imagen-Grande"> <!-- Aqui nos estamos carregando a Imagen G (Imagem Grande).-->
+
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Agora nos vamos tocar um Áudio em formato Ogg.</p>
+
+    <audio autoplay controls> <!-- Aqui nos estamos usando a Tag (audio) tiramos os Parâmetros que vêm por Padrão e abrimos ela.-->
+
+        <!-- OBS : Antes de avançarmos quero informar que ainda na Tag (audio) nos adicionamos outros dois Parâmetros, o Primeiro foi (autoplay) para que a Música toque assim que o Site Carregar e o Segundo foi (controls) para que o usuario possa Clicar no Botão de Play do Áudio para Tocar ele ou Pausa-lo, com isso o nosso site deixa mais evidente visualmente falando que possui um Áudio.-->
+
+        <!-- Abaixo nos estamos usando a Tag (source : src) e está Tag vêem com dois Parâmetros que no caso são o (src) e o (type),
+        para usarmos essa Tag corretamente e assim Reproduzirmos o nosso Áudio adequadamente nos primeiramente vamos ter que Passar o Caminho do nosso Arquivo de Áudio no Parâmetro (src) e o Tipo do nosso Arquivo de Áudio no Parâmetro (type), dependendo da Extensão do seu Arquivo de Áudio o valor do Parâmetro (type) pode ser diferente, por exemplo:
+        
+        Para Arquivoos de Áudio MP3 o Parâmetro (type) deve ser "audio/mpeg",
+        Para Arquivoos de Áudio OGG o Parâmetro (type) deve ser "audio/ogg",
+        Para Arquivoos de Áudio WAV o Parâmetro (type) deve ser "audio/wav".-->
+
+        <source src="midias/Glad You Came.ogg" type="audio/ogg"> <!-- Como na Programação o Site segue o Script de Cima para Baixo ele tentará Primeiro Carregar e Tocar esta Música, se isso não acontecer a mensagem deixada abaixo na Tag (p) será exibida na Tela.-->
+        <p>Não foi possivel carregar o Áudio.</p> <!-- Se o Site Conseguir Carregar e tocar a Música esta Mensagem na Tag (p) não será Exibida na Tela.-->
+    </audio>
+
+</body>
+</html>
