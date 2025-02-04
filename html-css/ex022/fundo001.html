@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Imagem de Fundo</title>
+    <style>
+        div.quadrado{
+            display: inline-block;
+            border: 1px solid black;
+            border-radius: 10px;
+            width: 300px; /* Largura.*/
+            height: 300px; /*Altura.*/
+            background-color: silver;
+        }
+
+        /* Agora nos vamos aplicar de uma maneira inovadora as nossas Imagens, nos nunca fizemos algu assim antes.*/
+
+
+        /* Abaixo nos usamos a Propriedade (background-image:) que vai nos permitir colocarmos a nossa Imagem na Página, em seguida nos usamos a Função (url()) e passamos como Parâmetro o Caminho da nossa Imagem mas este Parâmetro deve estar dentro de aspas Simples (''), logo em seguida nos finalizamos colocando o Ponto e Vírgula (;).*/
+        body{
+            background-image: url('./imagens/wallpaper001.jpg');
+        }
+        /* Com isso nos temos uma Imagem dentro da nossa Página mas vale resaltar que isso é apenas um Elemento complementar e decortivo e que isso de fato não faz realmente parte do nosso Site.*/
+
+        div#q1{
+            background-color: aquamarine;
+        }
+
+        div#q2{
+            background-image: linear-gradient(to bottom, black, rgb(255, 0, 0));
+        }
+
+        /* Abaixo nos estamos acessando a Tag (div) pelo seu (ID) que chamamos com o uso da HashTag (#), a e o id que nos refirimos é ('q3'). Nos fizemos isso para que possamos cria o Seletor que está localizado logo abaixo.*/
+
+        div#q3{
+            /* Abaixo nos usamos a Propriedade (background-image:) que vai nos permitir colocarmos a nossa Imagem na Página, em seguida nos usamos a Função (url()) e passamos como Parâmetro o Caminho da nossa Imagem mas este Parâmetro deve estar dentro de aspas Simples (''), logo em seguida nos finalizamos colocando o Ponto e Vírgula (;).*/
+            background-image: url('./imagens/pattern003.png');
+
+            /* Com isso nos temos uma Imagem dentro da nossa Página mas vale resaltar que isso é apenas um Elemento complementar e decortivo e que isso de fato não faz realmente parte do nosso Site.*/
+
+            /* Básicamente todo elemento de "Caixa", todo elemento Vísual que funciona como uma "Caixa" pode receber uma imagem de fundo e está imagem é aplicada pela Propriedade (background-image:) com a Função (url()) e passando o Parâmetro da Função em Aspas Simples ('').*/
+        }
+    </style>
+</head>
+<body>
+    <div class="quadrado" id="q1">
+
+    </div>
+
+    <div class="quadrado" id="q2">
+
+    </div>
+
+    <div class="quadrado" id="q3">
+
+    </div>
+</body>
+</html>
