@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Aula 16 Cap 3-->
+    <!-- Nesta aula nos vamos aprender a Trabalharmos um Pouco mais com o Tamanho das Imagens que usamos como Background.-->
+
+    <style>
+        body{
+            height: 100vh; /* Aqui nos usamos a Propriedade (height:) e atribuimos um valor de (100vh), a medida (vh) representa a nossa (Viewport) ou seja aqui nos estamos dizendo que o Tamanho do nosso (body) será igual a 100 Por Cento (%) da nossa Viewport. Depois de termos feito isso nos podemos Posicionar a nossa Imgam/Background tranquilamente no nosso (body).*/
+            background-color: black;
+            background-image: url('imagens/wallpaper002.jpg');
+            background-position: center top; /* Aqui nos estamos usando como refêrencia da Imagem o Centro do Topo desta Imagem/Background.*/
+            background-repeat: no-repeat;
+
+            /*background-size: contain;*/ /* Quando nos usamos (backgroun-size: contain;) o Site ira amostrar toda a noss Imagem/Background sem dar corte nenhum nela.*/
+
+            /* Para resolver o nosso problema da Imagem de Fundo não ocupar 100% da Viewport e o problema do espaço vazio nos podemos usar o seguinte:*/
+            background-size: cover; /* Ao usarmos a Propriedade (background-size:) com o valor (cover;) nos conseguimos fazer com que a Imagem de Fundo ocupe 100% da Viewport, desta forma nos também solucionamos os Problemas dos espaços vazios, no entanto, dependendo do Tamanho da tela a Imagem de fundo pode ficar "Picotada".*/
+        }
+
+        main{
+            background-color: white;
+            width: 400px;
+            padding: 10px;
+            margin: auto; /* Olha que interessante o Margin é quem posiciona o nosso elemento no Centro da tela e etc...*/
+            border: 1px solid blue;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Teste de Imagem de Fundo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe perspiciatis omnis sapiente natus ab sunt, debitis laboriosam reprehenderit! Dolore ratione in similique odit architecto, neque officiis consequatur minus blanditiis tenetur.lore Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, voluptas. Reprehenderit iure omnis eum et accusantium possimus natus in sint consectetur. Labore minus eos facilis, laudantium id doloremque praesentium at.</p>
+    </main>
+    
+</body>
+</html>
