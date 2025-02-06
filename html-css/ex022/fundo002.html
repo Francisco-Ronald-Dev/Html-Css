@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalização de fundo</title>
+    <style>
+        body{
+            background-image: url('https://gustavoguanabara.github.io/html-css/imagens/mascote.png'); /* Uma coisa interessante que você pode notar é que nos estamos atribuindo um Link Externo de uma Imagem e isso Funciona perfeitamente mas vale ressaltar que se um dia esta imagem ficar Indisponivel ou se este Site sair do Ar isso ira parar de Funcionar.*/
+            /* Por padrão da Propriedade (background-image:;) independente da Imagem que vc escolher ele sempre ira se repetir.*/
+
+            background-size: 100px 100px; /* Aqui nos estamos usando a Propriedade (background-size:) e estamos atribuindo para o nosso BACKGROUND que no nosso caso é a nossa IMAGEM um tamanho de (100px por 100px), o Background continua se repetindo mas o tamanho dele é fixo, se nos aumentarmos ou diminuirmos o tamanho da nossa Viewport você vera que o Background que é a Imagem realmente se repete.*/
+
+            /* Caso você queira que o BACKGROUND = IMAGEM não se repita nos temos como fazer isso, veja:*/
+            background-repeat: no-repeat; /* Aqui nos usamos a Propriedade (background-repeat:) e nos passamos o valor (no-repeat;), isso fara com que o nosso BACKGROUND = IMAGEM DE FUNDO não se repeta mais, o que nos vimos até aqui é ótimo para observarmos como cada vez mais nos vamos criando pequenas configurações que são bem simples e diretas e que serão aplicadas ao elemeneto destinado que no nosso caso é a Tag (body) que é o Corpo da Página.*/
+
+            /*background-repeat: repeat-x;*/ /* Está Propriedade com este Valor vai Repetir a Imagem no Eixo (x) começando por padrão sempre no Canto Superior Esquerdo da Página.*/
+
+            /*background-repeat: repeat-y;*/ /* Está Propriedade com este Valor vai Repetir a Imagem no Eixo (x) começando por padrão sempre no Canto Superior Esquerdo da Página.*/
+        }
+    </style>
+</head>
+<body>
+    <!-- Aula 14 Cap 3 : Comportamentos de Imagens em Sites.-->
+    <!-- Está aula é importânte para entendermos algums Comportamentos (resource) que as Imagens tem em sites, isso é quando usamos elas como Fundo, vale ressaltar também que na Aula e no Exercicio anterior nos aprendemos que todo e qualquer elemento que funcione como uma "Caixa" pode ter uma Imagem.-->
+     
+
+    <h1>Teste de Aplicação de fundo</h1>
+</body>
+</html>
