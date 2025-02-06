@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento</title>
+    <!-- Aula 15 Cap 3-->
+    <!-- Nesta aula nos ainda estamos aprendendo a usar as Imagens como Fundos mas claro que isso só funcionará em elementos/Tag's que funcionem como "Caixas", isso nos já sabemos, o que vamos aprender nesta Aula é a Trabalharmos com a Propriedade (Position) destas Imagens/Background's.-->
+    <style>
+        body{
+            background-image: url('https://gustavoguanabara.github.io/html-css/imagens/mascote.png');/* Aqui nos estamos usando a Propriedade (background-image:) e estamos atribuindo a Função (url();) para podermos usar uma Imagem como Background.*/
+
+            /* Antes de nos usarmos o (background-position:;) para podermos posicionar a nossa Imagem/Background nos temos que ter em mente que a "Caixa" que nos estamos tem que ter um "Conteúdo", isso é necessario para que o Posicionamento da Imagem/Background seja mais evidente e mais facil de ser Visualizado, Por padrão o "Conteúdo" da Tag (body) é quase zero então se nos centralizarmos a Imagem agora a nossa Imagem/Background ficaria no centro do Topo, isso não é nada agradavel mas para garantirmos que o "Conteúdo" da Tag (body) seja do tamanho da nossa Tela nos podemos usar o seguinte :*/
+
+            height: 98vh; /* Aqui nos usamos a Propriedade (height:) e atribuimos um valor de (98vh), a medida (vh) representa a nossa (Viewport) ou seja aqui nos estamos dizendo que o Tamanho do nosso (body) será igual a 98 Por Cento (%) da nossa Viewport. Depois de termos feito isso nos podemos Posicionar a nossa Imgam/Background tranquilamente no nosso (body).*/
+
+            background-size: 100px; /* isso é o aqui é o mesmo que dizer (background-size: 100px 100px;).*/
+
+            background-repeat: no-repeat; /* Aqui nos usamos a Propriedade (background-repeat:) e nos passamos o valor (no-repeat;), isso fara com que o nosso BACKGROUND = IMAGEM DE FUNDO não se repeta mais, o que nos vimos até aqui é ótimo para observarmos como cada vez mais nos vamos criando pequenas configurações que são bem simples e diretas e que serão aplicadas ao elemeneto destinado que no nosso caso é a Tag (body) que é o Corpo da Página.*/
+
+            background-position: center center; /* Aqui nos estamos usando a Propriedade (background-position:) e atribuimos o valor (center center;) desta forma nos estamos trabalhando com a Posição da Imagem de Fundo/Background e conseguimos também Posicionar corretamente no centro da Tag (body) depois do que fizemos.*/
+
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>

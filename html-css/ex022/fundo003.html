@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posição dos Fundos</title>
+    <!-- Aula 15 Cap 3-->
+    <!-- Nesta aula nos ainda estamos aprendendo a usar as Imagens como Fundos mas claro que isso só funcionará em elementos/Tag's que funcionem como "Caixas", isso nos já sabemos, o que vamos aprender nesta Aula é a Trabalharmos com a Propriedade (Position) destas Imagens/Background's.-->
+
+    <style>
+        div.bloco{
+            background-image: url('imagens/wallpaper002.jpg'); /* Aqui nos estamos usando este Seletor (div.bloco{}) para atriburimos atraves da Propriedade (background-image:) e da Função (url();) uma Imagem meio que "Global" essa mesma Imagem está sendo usada em todas as nossas Tag (Div) e o que faremos futuramente é apenas Posiciona-las indivídualmente de uma maneira mais interessante.*/
+            height: 200px;
+            border: 1px solid black;
+            border-radius: 20px;
+            margin: 10px;
+        }
+
+        /* Agora nos já criamos (ID'S) para as nossas Tag's (Div) e vamos acessar elas com a criação de Seletores correspondente a cada (ID) para Posicionarmos a Imagem/Background que colocamos nelas.*/
+
+        div#q1{
+            background-position: left top; /* Aqui nos estamos usando a Propriedade (background-position:) e atribuimos o valor (left top;) desta forma nos estamos trabalhando com a Posição da Imagem de Fundo/Background.*/
+        }
+        div#q2{
+            background-position: left center; /* Aqui nos estamos usando a Propriedade (background-position:) e atribuimos o valor (left center;) desta forma nos estamos trabalhando com a Posição da Imagem de Fundo/Background.*/
+        }
+        div#q3{
+            background-position: right bottom; /* Aqui nos estamos usando a Propriedade (background-position:) e atribuimos o valor (right bottom;) desta forma nos estamos trabalhando com a Posição da Imagem de Fundo/Background.*/
+        }
+        div#q4{
+            background-position: center center; /* Aqui nos estamos usando a Propriedade (background-position:) e atribuimos o valor (center center;) desta forma nos estamos trabalhando com a Posição da Imagem de Fundo/Background.*/
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="bloco" id="q1"></div>
+    <div class="bloco" id="q2"></div>
+    <div class="bloco" id="q3"></div>
+    <div class="bloco" id="q4"></div>
+</body>
+</html>
