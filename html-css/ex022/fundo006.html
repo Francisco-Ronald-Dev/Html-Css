@@ -19,11 +19,32 @@
 
             /* Para resolver o nosso problema da Imagem de Fundo não ocupar 100% da Viewport e o problema do espaço vazio nos podemos usar o seguinte:*/
             background-size: cover; /* Ao usarmos a Propriedade (background-size:) com o valor (cover;) nos conseguimos fazer com que a Imagem de Fundo ocupe 100% da Viewport, desta forma nos também solucionamos os Problemas dos espaços vazios, no entanto, dependendo do Tamanho da tela a Imagem de fundo pode ficar "Picotada".*/
+
+            /* Aula 17 Cap 3*/
+            /* Nesta Aula nos aprendemos um pouco mais sobre uma Propriedade muito interessante que é a Propriedade (background-attachment:;) nos podemos usar ela para que o Scroll afete apenas o Conteúdo da Página enquanto a Imagem/Background se torna algu a parte e não é afetado pelo Scroll, vejá:*/
+            background-attachment: fixed; /* Para alcançarmos este efeito que nos falamos nos só precisamos usar a Propriedade (background-attachment:) e atribuirmos a ela o Valor (fixed;).*/
+
+            /* A Palavra "Attachment" siguinifíca "Anexo", são coisas que estão "Conectadas" ou "Ligadas uma na outra".*/
+
+            /* Shorthand - Background*/
+            /* Not também podemos usar Shorthands para a Propriedade Background mas os valores desta Shorthand devem ser nesta ordem : 
+            (color, imagem , position, repeat, [size] e attachment;)*/
+
+            /* Obs : Vale lembrar que os Valores do Shorthand NÃO devem ser separados por Virgula.*/
+
+            /*background: black url('imagens/wallpaper002.jpg') center center no-repeat cover fixed;*/ 
+
+            /* Caso a Imagem de fundo suma o problema é o valor (cover) do Shorthand, eu recomendo que você remova apenas este valor e coloque a seguinte linha de código a seguir:*/
+            /*background-size: cover;*/
+
+            /* Feito isso o site voltará a funcionar corretaamente.*/
+
+            /* Pronto está aqui o Shorthand da Propriedade (background) usando apenas esta linha de codigo nos podemos substituir todas aquelas outras linhas de codigo usados um pouco mais em cima.*/
         }
 
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px; /* O Conteúdo da Tag (main) vai até os 400px de Largura, se o celular tiver uma Tela menor que isso este conteúdo de texto iria se adaptar.*/
             padding: 10px;
             margin: auto; /* Olha que interessante o Margin é quem posiciona o nosso elemento no Centro da tela e etc...*/
             border: 1px solid blue;
@@ -34,7 +55,7 @@
 <body>
     <main>
         <h1>Teste de Imagem de Fundo</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe perspiciatis omnis sapiente natus ab sunt, debitis laboriosam reprehenderit! Dolore ratione in similique odit architecto, neque officiis consequatur minus blanditiis tenetur.lore Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, voluptas. Reprehenderit iure omnis eum et accusantium possimus natus in sint consectetur. Labore minus eos facilis, laudantium id doloremque praesentium at.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe perspiciatis omnis sapiente natus ab sunt, debitis laboriosam reprehenderit! Dolore ratione in similique odit architecto, neque officiis consequatur minus blanditiis tenetur.lore Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, voluptas. Reprehenderit iure omnis eum et accusantium possimus natus in sint consectetur. Labore minus eos facilis, laudantium id doloremque praesentium at Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum laudantium ipsa officia est quia cupiditate culpa accusantium placeat, ratione voluptatibus dolores perspiciatis ullam, saepe doloribus doloremque! Dignissimos fugiat impedit labore?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum dolore dolor, doloremque velit accusamus cum dignissimos quis voluptatibus fuga fugit consequuntur eius atque sint totam modi illum officiis quibusdam sapiente?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, eius maiores eum voluptates possimus, non laborum labore iure deleniti natus ipsa quo consectetur, culpa aliquam. Possimus error numquam mollitia repudianda Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti veritatis dolores suscipit nobis, tempora esse sapiente officia dicta in molestias vel ea fuga nulla eius est soluta animi iste perspiciatis!.reprehenderit! Dolore ratione in similique odit architecto, neque officiis consequatur minus blanditiis tenetur.lore Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, voluptas. Reprehenderit iure omnis eum et accusantium possimus natus in sint consectetur. Labore minus eos facilis, laudantium id doloremque praesentium at Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum laudantium ipsa officia est quia cupiditate culpa accusantium placeat, ratione voluptatibus dolores perspiciatis ullam, saepe doloribus doloremque! Dignissimos fugiat impedit labore?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum dolore dolor, doloremque velit accusamus cum dignissimos quis voluptatibus fuga fugit consequuntur eius atque sint totam modi illum officiis quibusdam sapiente?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, eius maiores eum voluptates possimus, non laborum labore iure deleniti natus ipsa quo consectetur, culpa aliquam. Possimus error numquam mollitia repudianda Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti veritatis dolores suscipit nobis, tempora esse sapiente officia dicta in molestias vel ea fuga nulla eius est soluta animi iste perspiciatis!</p>
     </main>
     
 </body>
