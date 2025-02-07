@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+    <!-- Aula 17 Cap 3-->
+    <!-- Nesta aula nos vamos aprender mais sobre Alinhamento Vertical, e outros conceitos e detalhes importantes.-->
+
+    <style>
+        #container{
+            height: 500px;
+            padding: 10px;
+            background-color: blueviolet;
+
+            /* 1 - Por padraõ tudo que tem (Box-Model) tem um Posicionamento Relativo, e nos vamos deixar isso mais evidente aqui, podemos usar a Propriedade (position) para mudarmos isso mas só vamos alterar isso futuramente.*/
+
+            position: relative; /* Por padrão todos os (Box-model) tem está Configuração.*/
+
+        }
+        #conteudo{
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+
+            /* Para centralizarmos Horizontalmente nos normalmente usamos o seguinte (margin: auto;) mas isso não nos ajuda a Centralizarmos Verticalmente, e para centralizarmos Verticalmente nos devemos fazer o seguinte: */
+
+            /* Comece a seguir o passo a passo que fizemos nestá Página de Codigo.*/
+
+            /* 2 - Agora aqui no Conteúdo nos devemos mudar a Propriedade (position) apenas atribuindo a ela o valor ("absolute").*/
+            position: absolute;
+
+            /* 3 - Depois que nos auteramos a Propriedade (position) e atribuimos a ela o Valor ("absolute") nos passamos a ter acesso a outras Propriedades como (left, top, bottom, right), e é com estas novas Propriedades que vamos trabalhar, antes de prosseguirmos quero que você saiba que o ponto de partida destas "Imagens/Box/Box Model" que criamos é o ponto Esquerdo Superior, ele é o Pixel que é uma Grande Refêrencia para o Posicionamento das cooisas apartir de agora e eu vou chama-lo de "Primeiro Pixel de maior refêrencia" para que fique mais facil de se compreender as coisas que irei explicar daqui pra frente.*/
+
+            left : 50%; /* Aqui nos movemos o "Primeiro Pixel de maior refêrencia" a um deteminado ponto que ele fique a uma distância de 50% da Esquerda do seu Container.*/
+            top: 50%; /* Aqui nos movemos o "Primeiro Pixel de maior refêrencia" a um deteminado ponto que ele fique a uma distância de 50% do Topo do seu Container.*/
+
+            /* 4 - Certo agora você já deve notar que o "Primeiro Pixel de maior refêrencia" já está no meio do Cointeiner Roxo, no entanto ele não está realmente devidamente alinhado e Centralizado na Vertical, para fazermos isso nos vamos Mover apenas o nosso "Conteudo" que é o nosso "BLoco amarelo/Box-Model amarelo/Conteúdo" e nos vamos fazer isso usando a Propriedade (transform:) e usaremos a Função (translate();) desta forma:.*/
+            transform: translate(-50% ,-50%); /* Certo, aqui como você pode ver nos usamos a Função (translate();) e passamos como Parâmetro os Valores (-50%, -50%), isso siguinifica que nos estamos movimentando o nosso "Conteúdo" que é a "Caixa amarela/Box-Model amarela/Conteúdo" 50% para a esquerda e 50% para cima, isso póis nos passamos valores Negativos na Função (translate()).*/
+
+        }
+    </style>
+</head>
+<body>
+    <!-- Quando você vai centralizar Verticalmente é necessario termos a presença de um (Container) e de um (Conteúdo) e para representar isso nos vamos criar duas (Div's) e vamos criar ID's para elas, vejá:-->
+
+    <section id="container"> <!-- Para a Tag (sectiona) que será o nosso "container" já que ele vai "possuir o conteúdo" nos criamos o ID ("container").-->
+
+        <!-- A tag <section> é usada para definir seções dentro de um documento HTML. Cada <section> representa um agrupamento temático e de forma Semântica de conteúdo relacionado.-->
+        
+        <!-- A Diferença entre a Tag (section) e a Tag (div) é que a Tag (section) é usado para um conteúdo estruturado e semântico junto com outras Tag's com finalidades semelhantes como a Tag (main), Já a Tag (div) é usada Para agrupamento genérico sem significado semântico.-->
+        
+        <article id="conteudo"> <!-- E para a nossa Tag (article) que será O "Conteúdo" nos criamos o ID ("conteudo").-->
+
+        </article>
+    </section>
+    
+</body>
+</html>
