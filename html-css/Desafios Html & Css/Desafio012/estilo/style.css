@@ -1,5 +1,17 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap'); /* Aqui nos estamos Importando Uma Fonte do Google Fontes, o nome destá fonte que Importamos é : ("Passion One").*/
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap'); /* Aqui nos estamos Importando Uma Fonte do Google Fontes, o nome destá fonte que Importamos é : ("Sriracha").*/
+
+/* Aqui logo abaixo nos vamos começar a Criar as nossas Variaveis em CSS, estamos atribuindo as Variaveis o Comando das Fontes que o Site do Google Fonts disponibiliza.*/
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif; /* Exceto esta variavel, esta variavel aqui possui apenas as Fontes padrões e não usamos nenhum comando do site do Google Fonts aqui nesta Variavel.*/
+
+    --fonte2: "Passion One", serif;
+    --fonte3: "Sriracha", serif;
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -7,6 +19,7 @@
 html, body{
     min-height: 100vh; /* O tamanho Minimo da Altura vai ser de 100% da viewport.*/
     background-color: darkgray;
+    font-family: var(--fonte1);
 }
 header{
     background-color: black;
@@ -17,6 +30,10 @@ header > h1{
     padding-top: 50px;
     /* O Codigo : (text-transform: Upercase;) deixa todo o texto em letras MAIUSCULAS. */
     font-variant: small-caps; /* Este Comando (font-variant: small-caps;) deixa o texto em letras Maiusculas mas as primeiras letras ficam um pouco maiores.*/
+
+    font-family: var(--fonte2);
+
+    font-size: 10vw; /* Aqui nos estamos usando a Propriedade (font-size:) e estamos atribuindo o valor (10vw;), esta Medida (vw) simplesmente é a Largura da Viewport, ou seja, nos estamos atribuindo ao Tamanho desta Fonte o valor de 10% da Largura da Viewport.*/
 }
 header > p{
     padding-bottom: 50px; /* Aqui nos estamos criando um espaço em baixo dos Creditos do Criador da Poesia, esse espaço fica visivelmente agradavel para separarmos um pouco os Creditos do Conteúdo da Página.*/
@@ -39,6 +56,8 @@ section{ /* Tudo que nos configurarmos aqui na Tag (section) neset Seletor vai v
     padding-bottom: 10vh; /* Aqui nos estamos atribuindo um (Paddin-bottom) que vai criar um espaço correspondente a 10% da Viewport em baixo de Cada Tag (section) e suas "Variantes" como (section.normal) e (section.imagem).*/
     line-height: 2em; /* Aqui nos usamos a Propriedade (line-heigh: 2em;) para criarmos um espaçamento entre cada Linha das Seções e este espaçamento é correspondente a duas vezes do espaçamento normal, essa é a Médida (em).*/
     padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.5vw; /* Aqui nos estamos usando a Propriedade (font-size:) e estamos atribuindo o valor (3.5vw;), esta Medida (vw) simplesmente é a Largura da Viewport, ou seja, nos estamos atribuindo ao Tamanho desta Fonte o valor de 3.5% da Largura da Viewport.*/
 }
 
 section.normal{
@@ -47,12 +66,17 @@ section.normal{
 }
 
 section.imagem{
+    
     background-color: rgb(68, 68, 68);
     color: rgb(255, 255, 255);
 }
 
 section.imagem > p{
-    width: 400px; /* Comprimento.*/
+    /*width: 400px; */ /* Comprimento.*/
+
+    display: inline-block; /* Aqui nos estamos usando a Propriedade (display:) e estamos atribuindo a ela o valor (inline-block;), isso faz com que a "Caixa" da Tag se adapte ao Tamanho (Altura e Largura) do seu Conteúdo.*/
+
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.37);
 }
 
