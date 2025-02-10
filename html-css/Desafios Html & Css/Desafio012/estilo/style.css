@@ -60,6 +60,13 @@ section{ /* Tudo que nos configurarmos aqui na Tag (section) neset Seletor vai v
     font-size: 3.5vw; /* Aqui nos estamos usando a Propriedade (font-size:) e estamos atribuindo o valor (3.5vw;), esta Medida (vw) simplesmente é a Largura da Viewport, ou seja, nos estamos atribuindo ao Tamanho desta Fonte o valor de 3.5% da Largura da Viewport.*/
 }
 
+section > p{
+    padding-bottom: 2em; /* Aqui nos estamos criando um espaço em baixo de cada Parágrafo (p) da Tag (section) e este espaço criado tem o valor de (2em) que é duas vezes maior que o espaço normal. Essa é a medida (em)*/
+
+}
+
+/* Agora nos vamos voltar para o nosso Documento HTML e vamos criar (ID's) para as Tag's (section) que tem a classe (imagem). Já que vamos usar duas Imagens aqui no nosso Site vamos usar dois (ID's) diferentes.*/
+
 section.normal{
     background-color: white;
     color: black;
@@ -69,6 +76,9 @@ section.imagem{
     
     background-color: rgb(68, 68, 68);
     color: rgb(255, 255, 255);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.434); /* Aqui nos estamos usando a Propriedade (box-shadow:) e estamos atribuindo a ela o valor (inset) que faz com que a Sombra seja para dentro da "Caixa"/(Box-model) e atribuimos também os demais 4 valores da sombra.*/
+
+    background-attachment: fixed; /* Aqui nos usamos a Propriedade (background-attchments:) e atribumos a ela o valor (fixed;) que vai adicionar nas nossas Imagens do site uma Imprensão de "Paralax" o que é muito interessante.*/
 }
 
 section.imagem > p{
@@ -77,7 +87,19 @@ section.imagem > p{
     display: inline-block; /* Aqui nos estamos usando a Propriedade (display:) e estamos atribuindo a ela o valor (inline-block;), isso faz com que a "Caixa" da Tag se adapte ao Tamanho (Altura e Largura) do seu Conteúdo.*/
 
     padding: 5px;
-    background-color: rgba(0, 0, 0, 0.37);
+    background-color: rgba(0, 0, 0, 0.51);
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img01{ /* Aqui nos estamos criando o Seletor usando o (ID) da Tag (section) ao qual atribuiremos uma imagem de fundo.*/
+    background-image: url('../pacote-d012/imagens/background001.jpg'); /* Aqui nos estamos atruindo uma Imagem.*/
+    background-position: right center; /* Aqui nos estamos posicionando o ponto de Partida da nossa Imagem.*/
+    background-size: cover; /* Aqui nos usamos a Propriedade (background-size:) e atribuimos a ela o valor (cover;) que é para amostrar toda a Imagem sem fazer Recortes.*/
+}
+
+section#img02{ /* Aqui nos estamos criando o Seletor usando o (ID) da Tag (section) ao qual atribuiremos uma imagem de fundo.*/
+    background-image: url('../pacote-d012/imagens/background002.jpg'); /* Aqui nos estamos atruindo uma Imagem.*/
+    background-size: cover; /* Aqui nos usamos a Propriedade (background-size:) e atribuimos a ela o valor (cover;) que é para amostrar toda a Imagem sem fazer Recortes.*/
 }
 
 /* Quando formos criar o nosso Arquivo CSS é bom mantermos uma ordemm de começo, meio e fim como fizemos neste arquivo, por exemplo : a Tag (footer) é a última parte do Documento HTML e aqui no CSS este Seletor da Tag (footer) é a ultima coisa que fizemos neste Documento.*/
