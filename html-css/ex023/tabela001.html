@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{ /* Aqui nos estamos no Seletor da Tag (table), acontece que nos temos algumas Propriedades muito Interessantes para a Tabela, nos podemos configurar suas Propriedades para termos resultados agradaveis pra uma Tabela e é isso que nos vamos fazer agora.*/
+            width: 400px;
+            border-collapse: collapse; /* Aqui nos temos a Propriedade (border-collapse:) está Propriedade é responsavel por separar ou juntar as Células de uma Tabela, por padrão o Valor desta Propriedade é (separete;) mas nos estamos usando o valor (collapse;) que faz com que as Células da Tabela fiquem mais juntas e proximas umas das outras.*/
+        }
+        td{
+            border: 1px solid black;
+        }
+    </style>
+    <!-- Aula 27 Cap 21 Modulo 3-->
+    <!-- Nesta Aula nos vamos aprenderm mais sobre Tabelas nos Sites, uma dica útil é nunca construr o Layalt do Site como uma Tabela, as Tabelas podem ser usadas de melhor forma apenas para representar Dados dentro de um Site.-->
+</head>
+<body>
+    <h1>Minha Primeira Tabela.</h1>
+
+    <!--
+        Hierarquia de Tabela :
+            Table = Tabela
+                Table Row = Linha de Tabela
+                    Table Header = Cabeçalho de Tabela
+                    Table Data = Dado de Tabela-->
+
+    <table> <!-- A Tag (table) que nos usamos aqui serve para informa que o que estará aqui dentro seram elementos de Tabela.-->
+        <tr> <!-- Aqui nos usamos a Tag (tr) que representa a Linha da Tabela (Table Row) que é um elemento Fundamental nas Tabelas feitas em HTML e por isso tem essa preferencia de ser uma Tag que deve vir "primeiro"-->
+            <td> <!-- Aqui nos estamos usando a Tag (td) que representa o Dado da Tabela (Table Data) esta Tag (td) deve estar sempre dentro da Tag (tr).-->
+
+                A1 <!-- Aqui dentro da Tag nos botamos o nosso Dado, eu botei ("A1").-->
+
+            </td>
+            <td>B1</td>
+            <td>C1</td>
+
+        </tr>
+
+        <tr>
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
