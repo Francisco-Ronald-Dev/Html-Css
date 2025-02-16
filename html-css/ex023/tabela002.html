@@ -19,6 +19,12 @@
             border: 1px solid black;
             padding: 10px;
         }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
         thead, tfoot{
             background-color: gray;
             color: white;
@@ -32,6 +38,7 @@
 <body>
     <!-- Anatomia para Tabelas Grandes:-->
     <!--TABLE
+            CAPTION -> Aqui é a Legenda da Tabela, aqui não usamos nem a Tag (tr) e nem a Tag (td).
             THEAD -> Aqui é o Cabeçalho da Tabela.
                 TR, TD, TH
             TBODY -> Aqui é o Corpo da Tabela.
@@ -40,10 +47,13 @@
                 TR, TD, TH-->
     
     <table>
+        <caption>
+            Estados e suas Populações
+        </caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th> <!-- Uma coisa muito Importante é definirmos os nossos Scopos das Tabelas, como você pode ver na linha ao lado nos passamos o Parâmetro (scope = "col") isto siguinifica que este dado faz parte de uma Coluna da Tabela.-->
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
 
         </thead>
@@ -72,7 +82,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th> <!-- Uma coisa muito Importante é definirmos os nossos Scopos das Tabelas, como você pode ver na linha ao lado nos passamos o Parâmetro (scope = "row") isto siguinifica que este dado faz parte de uma Linha da Tabela.-->
                 <td class="num"><strong>110 649 804</strong></td>
             </tr>
 
