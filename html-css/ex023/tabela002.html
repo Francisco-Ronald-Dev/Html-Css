@@ -14,6 +14,11 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            /* Aula 32 Cap 3 */
+            /* Aqui nos vamos aprender a deixarmos a "Legenda/Título" da nossa Tabela Fixo no topo dela, quando fizermos isso e rolarmos a nossa Tabela para baixo o nosoo "Legenda/Título" da Tábela irá continuar lá.*/
+            position: relative; /* Nos usamos a Propriedade (position: relative;) apenas para que possamos obter acesso as Outras Prpriedades de Posição como : (left), (center), (top), e etc...*/
+
+            /* Agora que a Tabela tem sua Posição Relativa os elementos dentro da Tabela podem ter diferentes Posições.*/
         }
         td, th{
             border: 1px solid black;
@@ -28,6 +33,17 @@
         thead, tfoot{
             background-color: gray;
             color: white;
+        }
+
+        thead > tr > th{ /* Como o Elemento da nossa Tabela que nos queremos deixar Fixo é uma tag (th) que está dentro de (tr) que esta dentro de (thead) nos criamos este Seletor para configurarmos corretamente esta "Mecânica" do nosso Site.*/
+
+        /* Lembra que nos definimos a Posição da nossa Tabela como "relativa" isso siguinifica que os Elementos como Tag's dentro desta Tabela podem ter diferentes Posições.*/
+        position: sticky; /* Aqui nos usamos a Propriedade (position: sticky;) "stick" = "grudado/Pegajoso/Pegajosa".*/ 
+        top: -1px; /* Aqui nos só estamos Posicionando o Elemento na Viewport levando em consideração a Posição inicial dele na Tela.*/
+
+        /* Vamos agora apenas manter o (Background-color) para que o texto não fique só quando estivermos Scorolando, queremos que a cor do Fundo acompanhe o texto quando ele estiver fixo e sendo scorado,, por isso nos adicionamos esta linha de codigo.*/
+        background-color: gray;
+
         }
         /* Aula 31 do Cap 3 do Curso dde Html5 e Css3.*/
         /* Nesta Aula nos ainda estamos no Capítulo de Tabelas mas Aprendemos a criarmos o Efeito de "Zebrado" na Tabela, vou explicar tudo mais abaixo.*/
@@ -85,6 +101,98 @@
                 <td class="num">11 433 957</td>
             </tr>
 
+            <!-- Tive que repetir estes Dados :( prf iguinore isso por favor.-->
+
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 863 064</td>
+            </tr>
+            <tr>
+                <td>Parána</td>
+                <td class="num">11 433 957</td>
+            </tr>
+
+            <!-- Tive que repetir estes Dados :( prf iguinore isso por favor.-->
+
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 863 064</td>
+            </tr>
+            <tr>
+                <td>Parána</td>
+                <td class="num">11 433 957</td>
+            </tr>
+
+            <!-- Tive que repetir estes Dados :( prf iguinore isso por favor.-->
+
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 863 064</td>
+            </tr>
+            <tr>
+                <td>Parána</td>
+                <td class="num">11 433 957</td>
+            </tr>
+
+            <!-- Tive que repetir estes Dados :( prf iguinore isso por favor.-->
+
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 863 064</td>
+            </tr>
+            <tr>
+                <td>Parána</td>
+                <td class="num">11 433 957</td>
+            </tr>
+
         </tbody>
         <tfoot>
             <tr>
@@ -94,6 +202,8 @@
 
         </tfoot>
     </table>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In expedita neque pariatur ad commodi, blanditiis quis ut sequi reiciendis porro nobis nisi, dicta nihil iste amet praesentium excepturi provident sint.Lorem ipsum dolor sit, amet consectetur adipisicing elit. In expedita neque pariatur ad commodi, blanditiis quis ut sequi reiciendis porro nobis nisi, dicta nihil iste amet praesentium excepturi provident sint.Lorem ipsum dolor sit, amet consectetur adipisicing elit. In expedita neque pariatur ad commodi, blanditiis quis ut sequi reiciendis porro nobis nisi, dicta nihil iste amet praesentium excepturi provident sint.Lorem ipsum dolor sit, amet consectetur adipisicing elit. In expedita neque pariatur ad commodi, blanditiis quis ut sequi reiciendis porro nobis nisi, dicta nihil iste amet praesentium excepturi provident sint.Lorem ipsum dolor sit, amet consectetur adipisicing elit. In expedita neque pariatur ad commodi, blanditiis quis ut sequi reiciendis porro nobis nisi, dicta nihil iste amet praesentium excepturi provident sint.Lorem ipsum dolor sit, amet consectetur adipisicing elit. In expedita neque pariatur ad commodi, blanditiis quis ut sequi reiciendis porro nobis nisi, dicta nihil iste amet praesentium excepturi provident sint.Lorem ipsum dolor sit, amet consectetur adipisicing elit. In expedita neque pariatur ad commodi, blanditiis quis ut sequi reiciendis porro nobis nisi, dicta nihil iste amet praesentium excepturi provident sint.Lorem ipsum dolor sit, amet consectetur adipisicing elit. In expedita neque pariatur ad commodi, blanditiis quis ut sequi reiciendis porro nobis nisi, dicta nihil iste amet praesentium excepturi provident sint.Lorem ipsum dolor sit, amet consectetur adipisicing elit. In expedita neque pariatur ad commodi, blanditiis quis ut sequi reiciendis porro nobis nisi, dicta nihil iste amet praesentium excepturi provident sint.Lorem ipsum dolor sit, amet consectetur adipisicing elit. In expedita neque pariatur ad commodi, blanditiis quis ut sequi reiciendis porro nobis nisi, dicta nihil iste amet praesentium excepturi provident sint.Lorem ipsum dolor sit, amet consectetur adipisicing elit. In expedita neque pariatur ad commodi, blanditiis quis ut sequi reiciendis porro nobis nisi, dicta nihil iste amet praesentium excepturi provident sint.Lorem ipsum dolor sit, amet consectetur adipisicing elit. In expedita neque pariatur ad commodi, blanditiis quis ut sequi reiciendis porro nobis nisi, dicta nihil iste amet praesentium excepturi provident sint.Lorem ipsum dolor sit, amet consectetur adipisicing elit. In expedita neque pariatur ad commodi, blanditiis quis ut sequi reiciendis porro nobis nisi, dicta nihil iste amet praesentium excepturi provident sint.Lorem ipsum dolor sit, amet consectetur adipisicing elit. In expedita neque pariatur ad commodi, blanditiis quis ut sequi reiciendis porro nobis nisi, dicta nihil iste amet praesentium excepturi provident sint.Lorem ipsum dolor sit, amet consectetur adipisicing elit. In expedita neque pariatur ad commodi, blanditiis quis ut sequi reiciendis porro nobis nisi, dicta nihil iste amet praesentium excepturi provident sint.Lorem ipsum dolor sit, amet consectetur adipisicing elit. In expedita neque pariatur ad commodi, blanditiis quis ut sequi reiciendis porro nobis nisi, dicta nihil iste amet praesentium excepturi provident sint.Lorem ipsum dolor sit, amet consectetur adipisicing elit. In expedita neque pariatur ad commodi, blanditiis quis ut sequi reiciendis porro nobis nisi, dicta nihil iste amet praesentium excepturi provident sint.Lorem ipsum dolor sit, amet consectetur adipisicing elit. In expedita neque pariatur ad commodi, blanditiis quis ut sequi reiciendis porro nobis nisi, dicta nihil iste amet praesentium excepturi provident sint.Lorem ipsum dolor sit, amet consectetur adipisicing elit. In expedita neque pariatur ad commodi, blanditiis quis ut sequi reiciendis porro nobis nisi, dicta nihil iste amet praesentium excepturi provident sint.Lorem ipsum dolor sit, amet consectetur adipisicing elit. In expedita neque pariatur ad commodi, blanditiis quis ut sequi reiciendis porro nobis nisi, dicta nihil iste amet praesentium excepturi provident sint.Lorem ipsum dolor sit, amet consectetur adipisicing elit. In expedita neque pariatur ad commodi, blanditiis quis ut sequi reiciendis porro nobis nisi, dicta nihil iste amet praesentium excepturi provident sint.Lorem ipsum dolor sit, amet consectetur adipisicing elit. In expedita neque pariatur ad commodi, blanditiis quis ut sequi reiciendis porro nobis nisi, dicta nihil iste amet praesentium excepturi provident sint.Lorem ipsum dolor sit, amet consectetur adipisicing elit. In expedita neque pariatur ad commodi, blanditiis quis ut sequi reiciendis porro nobis nisi, dicta nihil iste amet praesentium excepturi provident sint.Lorem ipsum dolor sit, amet consectetur adipisicing elit. In expedita neque pariatur ad commodi, blanditiis quis ut sequi reiciendis porro nobis nisi, dicta nihil iste amet praesentium excepturi provident sint.Lorem ipsum dolor sit, amet consectetur adipisicing elit. In expedita neque pariatur ad commodi, blanditiis quis ut sequi reiciendis porro nobis nisi, dicta nihil iste amet praesentium excepturi provident sint.Lorem ipsum dolor sit, amet consectetur adipisicing elit. In expedita neque pariatur ad commodi, blanditiis quis ut sequi reiciendis porro nobis nisi, dicta nihil iste amet praesentium excepturi provident sint.Lorem ipsum dolor sit, amet consectetur adipisicing elit. In expedita neque pariatur ad commodi, blanditiis quis ut sequi reiciendis porro nobis nisi, dicta nihil iste amet praesentium excepturi provident sint.Lorem ipsum dolor sit, amet consectetur adipisicing elit. In expedita neque pariatur ad commodi, blanditiis quis ut sequi reiciendis porro nobis nisi, dicta nihil iste amet praesentium excepturi provident sint.Lorem ipsum dolor sit, amet consectetur adipisicing elit. In expedita neque pariatur ad commodi, blanditiis quis ut sequi reiciendis porro nobis nisi, dicta nihil iste amet praesentium excepturi provident sint.Lorem ipsum dolor sit, amet consectetur adipisicing elit. In expedita neque pariatur ad commodi, blanditiis quis ut sequi reiciendis porro nobis nisi, dicta nihil iste amet praesentium excepturi provident sint.Lorem ipsum dolor sit, amet consectetur adipisicing elit. In expedita neque pariatur ad commodi, blanditiis quis ut sequi reiciendis porro nobis nisi, dicta nihil iste amet praesentium excepturi provident sint.Lorem ipsum dolor sit, amet consectetur adipisicing elit. In expedita neque pariatur ad commodi, blanditiis quis ut sequi reiciendis porro nobis nisi, dicta nihil iste amet praesentium excepturi provident sint.Lorem ipsum dolor sit, amet consectetur adipisicing elit. In expedita neque pariatur ad commodi, blanditiis quis ut sequi reiciendis porro nobis nisi, dicta nihil iste amet praesentium excepturi provident sint.Lorem ipsum dolor sit, amet consectetur adipisicing elit. In expedita neque pariatur ad commodi, blanditiis quis ut sequi reiciendis porro nobis nisi, dicta nihil iste amet praesentium excepturi provident sint.Lorem ipsum dolor sit, amet consectetur adipisicing elit. In expedita neque pariatur ad commodi, blanditiis quis ut sequi reiciendis porro nobis nisi, dicta nihil iste amet praesentium excepturi provident sint.Lorem ipsum dolor sit, amet consectetur adipisicing elit. In expedita neque pariatur ad commodi, blanditiis quis ut sequi reiciendis porro nobis nisi, dicta nihil iste amet praesentium excepturi provident sint.Lorem ipsum dolor sit, amet consectetur adipisicing elit. In expedita neque pariatur ad commodi, blanditiis quis ut sequi reiciendis porro nobis nisi, dicta nihil iste amet praesentium excepturi provident sint.Lorem ipsum dolor sit, amet consectetur adipisicing elit. In expedita neque pariatur ad commodi, blanditiis quis ut sequi reiciendis porro nobis nisi, dicta nihil iste amet praesentium excepturi provident sint.Lorem ipsum dolor sit, amet consectetur adipisicing elit. In expedita neque pariatur ad commodi, blanditiis quis ut sequi reiciendis porro nobis nisi, dicta nihil iste amet praesentium excepturi provident sint.Lorem ipsum dolor sit, amet consectetur adipisicing elit. In expedita neque pariatur ad commodi, blanditiis quis ut sequi reiciendis porro nobis nisi, dicta nihil iste amet praesentium excepturi provident sint.Lorem ipsum dolor sit, amet consectetur adipisicing elit. In expedita neque pariatur ad commodi, blanditiis quis ut sequi reiciendis porro nobis nisi, dicta nihil iste amet praesentium excepturi provident sint.Lorem ipsum dolor sit, amet consectetur adipisicing elit. In expedita neque pariatur ad commodi, blanditiis quis ut sequi reiciendis porro nobis nisi, dicta nihil iste amet praesentium excepturi provident sint.Lorem ipsum dolor sit, amet consectetur adipisicing elit. In expedita neque pariatur ad commodi, blanditiis quis ut sequi reiciendis porro nobis nisi, dicta nihil iste amet praesentium excepturi provident sint.Lorem ipsum dolor sit, amet consectetur adipisicing elit. In expedita neque pariatur ad commodi, blanditiis quis ut sequi reiciendis porro nobis nisi, dicta nihil iste amet praesentium excepturi provident sint.Lorem ipsum dolor sit, amet consectetur adipisicing elit. In expedita neque pariatur ad commodi, blanditiis quis ut sequi reiciendis porro nobis nisi, dicta nihil iste amet praesentium excepturi provident sint.Lorem ipsum dolor sit, amet consectetur adipisicing elit. In expedita neque pariatur ad commodi, blanditiis quis ut sequi reiciendis porro nobis nisi, dicta nihil iste amet praesentium excepturi provident sint.Lorem ipsum dolor sit, amet consectetur adipisicing elit. In expedita neque pariatur ad commodi, blanditiis quis ut sequi reiciendis porro nobis nisi, dicta nihil iste amet praesentium excepturi provident sint.Lorem ipsum dolor sit, amet consectetur adipisicing elit. In expedita neque pariatur ad commodi, blanditiis quis ut sequi reiciendis porro nobis nisi, dicta nihil iste amet praesentium excepturi provident sint.Lorem ipsum dolor sit, amet consectetur adipisicing elit. In expedita neque pariatur ad commodi, blanditiis quis ut sequi reiciendis porro nobis nisi, dicta nihil iste amet praesentium excepturi provident sint.Lorem ipsum dolor sit, amet consectetur adipisicing elit. In expedita neque pariatur ad commodi, blanditiis quis ut sequi reiciendis porro nobis nisi, dicta nihil iste amet praesentium excepturi provident sint.Lorem ipsum dolor sit, amet consectetur adipisicing elit. In expedita neque pariatur ad commodi, blanditiis quis ut sequi reiciendis porro nobis nisi, dicta nihil iste amet praesentium excepturi provident sint.Lorem ipsum dolor sit, amet consectetur adipisicing elit. In expedita neque pariatur ad commodi, blanditiis quis ut sequi reiciendis porro nobis nisi, dicta nihil iste amet praesentium excepturi provident sint.Lorem ipsum dolor sit, amet consectetur adipisicing elit. In expedita neque pariatur ad commodi, blanditiis quis ut sequi reiciendis porro nobis nisi, dicta nihil iste amet praesentium excepturi provident sint.Lorem ipsum dolor sit, amet consectetur adipisicing elit. In expedita neque pariatur ad commodi, blanditiis quis ut sequi reiciendis porro nobis nisi, dicta nihil iste amet praesentium excepturi provident sint.Lorem ipsum dolor sit, amet consectetur adipisicing elit. In expedita neque pariatur ad commodi, blanditiis quis ut sequi reiciendis porro nobis nisi, dicta nihil iste amet praesentium excepturi provident sint.Lorem ipsum dolor sit, amet consectetur adipisicing elit. In expedita neque pariatur ad commodi, blanditiis quis ut sequi reiciendis porro nobis nisi, dicta nihil iste amet praesentium excepturi provident sint.Lorem ipsum dolor sit, amet consectetur adipisicing elit. In expedita neque pariatur ad commodi, blanditiis quis ut sequi reiciendis porro nobis nisi, dicta nihil iste amet praesentium excepturi provident sint.Lorem ipsum dolor sit, amet consectetur adipisicing elit. In expedita neque pariatur ad commodi, blanditiis quis ut sequi reiciendis porro nobis nisi, dicta nihil iste amet praesentium excepturi provident sint.Lorem ipsum dolor sit, amet consectetur adipisicing elit. In expedita neque pariatur ad commodi, blanditiis quis ut sequi reiciendis porro nobis nisi, dicta nihil iste amet praesentium excepturi provident sint.Lorem ipsum dolor sit, amet consectetur adipisicing elit. In expedita neque pariatur ad commodi, blanditiis quis ut sequi reiciendis porro nobis nisi, dicta nihil iste amet praesentium excepturi provident sint.</p>
     
 </body>
 </html>
