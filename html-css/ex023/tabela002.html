@@ -29,6 +29,12 @@
             background-color: gray;
             color: white;
         }
+        /* Aula 31 do Cap 3 do Curso dde Html5 e Css3.*/
+        /* Nesta Aula nos ainda estamos no Capítulo de Tabelas mas Aprendemos a criarmos o Efeito de "Zebrado" na Tabela, vou explicar tudo mais abaixo.*/
+        tbody > tr:nth-child(2n){ /* Aqui nos Criamos um Seletor, no entanto temos um evento (:) aqui. Este Seletor serve para que toda Tag (tr) "T = Tabela, R = Row = Linha" dentro da Tag (tbody) que é o "Corpo da Tabela" que tiver o evento (:) (nth-child()) que é um "Evento" das Tabelas, como parâmetro passamos o valor (2n) que informa de que de duas em duas linhas algu vai acontecer, e o que vai acontecer vai ser o Conteúdo deste Seletor.*/
+        /* Nos também poderiamos passar estes Parâmetros : (old) que é "impar" e (even) que é "par" mas a tradução correta é "até".*/
+            background-color: lightgray; /* A Linha da Tabela vai ficar cinza.*/
+        }
         td.num{
             text-align: right;
         }
