@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <!-- Aula 35 Modulo 3-->
+    <!-- Nesta Aula nos vamos montar Novamente uma Tabela e vamos usar mais uma vez a Mecânica de Mesclagem de Células, mas neta Tabela nos vamos aprender mais coisas Interessantes, por tanto, vamos lá.*/-->
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse; /* Apenas para deixar todas as Células da Tabela grudadas uma na Outra ou mais proximas.*/
+        }
+        caption{
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercicio de Tabelas</h1>
+    <!-- Como está nossa Tabela vai ser algu mais "Profissional" nos vamos dar Prioridade para que este Codigo seja bem Semântico e facil de se entender.*/-->
+    <table>
+        <caption> <!-- A Tag (caption) que usamos aqui é a "Legenda" da nossa Tabela-->
+            Filmes Favoritos
+        </caption>
+
+        <thead> <!-- Todas as Células que ficam no Cabeçalho (thead) das Tábelas costumam estar sempre em Negrito por padrão, isso serve para reforçar a idea de que tal Célula é uma Célula de "Titulo", portanto, a Tag (thead) deve conter Tag's (tr) Para as "Linhas" das Tabelas e as Tag's (th) que são as Tag's/"Células" de "Titulos" nas Tabelas.-->
+        <!-- Obs : Sempre que usarmos a Tag (th) nos vamos ter que definir o "Escopo" da Tag.-->
+            <tr>
+                <th>Grupos</th>
+                <th>Nomes</th>
+                <th colspan="3">Filmes</th>
+            </tr>
+        </thead>
+
+        <tbody> <!-- Aqui nos estamos dentro da Tag (tbody) que é o "Corpo" da  Tabela, aqui nos podemos usar também a Tag (th) e ela vai servir e ter sua mesma função dita anteriormente.-->
+            <tr>
+                <th rowspan="3">Mulheres</th>
+                <td>Ana Maria Santos</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <td>Beatriz Souza</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+            </tr>
+            <tr>
+                <td>Cláudia Melo</td>
+                <td>Oblivion</td>
+                <td>Matrix</td>
+                <td>Big Hero</td>
+            </tr>
+            <tr>
+                <th rowspan="3">Homens</th>
+                <td>Bruno Mendonça</td>
+                <td>Intocaveis</td>
+                <td>Amnésia</td>
+                <td>Gladiadores</td>
+            </tr>
+            <tr>
+                <td>Daniel Lourenço</td>
+                <td>Wall-E</td>
+                <td>OldBoy</td>
+                <td>Dangal</td>
+
+            </tr>
+            <tr>
+                <td>Fabiano Mota</td>
+                <td>Star Wars V</td>
+                <td>Taxi Driver</td>
+                <td>Toy Story</td>
+            </tr>
+        </tbody>
+
+        <tfoot></tfoot>
+    </table>
+</body>
+</html>
