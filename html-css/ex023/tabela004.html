@@ -36,15 +36,17 @@
         <thead> <!-- Todas as Células que ficam no Cabeçalho (thead) das Tábelas costumam estar sempre em Negrito por padrão, isso serve para reforçar a idea de que tal Célula é uma Célula de "Titulo", portanto, a Tag (thead) deve conter Tag's (tr) Para as "Linhas" das Tabelas e as Tag's (th) que são as Tag's/"Células" de "Titulos" nas Tabelas.-->
         <!-- Obs : Sempre que usarmos a Tag (th) nos vamos ter que definir o "Escopo" da Tag.-->
             <tr>
-                <th>Grupos</th>
-                <th>Nomes</th>
-                <th colspan="3">Filmes</th>
+                <!-- Logo a baixo nos temos que definir o Escopo de todas as Nossas Tag's (th) que temos aqui.-->
+                <!-- As Quantidades e Tipos de Escopo que podemos definir para as nossas Tabelas em Html são 4 Tipos de Escopo (col, colgroup, row e rowgroup)-->
+                <th scope="col">Grupos</th> <!-- Aqui nos já estamos atribuindo o Scope pelo Parâmetro (scope) na Tag (th), isso de atribuir Escopo nesta Tag é Obrigatorio.-->
+                <th scope="col">Nomes</th>
+                <th colspan="3" scope="colgroup">Filmes</th>
             </tr>
         </thead>
 
         <tbody> <!-- Aqui nos estamos dentro da Tag (tbody) que é o "Corpo" da  Tabela, aqui nos podemos usar também a Tag (th) e ela vai servir e ter sua mesma função dita anteriormente.-->
             <tr>
-                <th rowspan="3">Mulheres</th>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
                 <td>Ana Maria Santos</td>
                 <td>Alien</td>
                 <td>Rambo</td>
@@ -63,7 +65,7 @@
                 <td>Big Hero</td>
             </tr>
             <tr>
-                <th rowspan="3">Homens</th>
+                <th rowspan="3" scope="rowgroup">Homens</th>
                 <td>Bruno Mendonça</td>
                 <td>Intocaveis</td>
                 <td>Amnésia</td>
@@ -84,7 +86,12 @@
             </tr>
         </tbody>
 
-        <tfoot></tfoot>
+        <tfoot>
+            <tr>
+                <th colspan="4" scope="row">Total</th>
+                <td>1000</td>
+            </tr>
+        </tfoot>
     </table>
 </body>
 </html>
