@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Tabelas</title>
+    <!-- Aula 38 Modulo 3 Cap 21-->
+    <!-- Nesta Aula nos vamos aprender a Agruparmos Colunas usando o Escopo (scope= "colgroup") e entre outras coisas-->
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+        caption{
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 8px;
+        }
+        tr.destaque{ /* Aqui é um Seletor que criamos acessando a Class de uma Linha (row) que é a Tag (tr), fizemos isso para mostrar o qual diferente é Formatar uma Coluna de uma Linha, a Linha é mais facil.*/
+            background-color: chartreuse;
+        }
+        col.cnome{ /* Veja como nos acessamos aClass da Coluna neste Seletor, primeiro  acessamos a Tag (col), depois usamos o (.) para acessarmos a Class e depois informamos qual Class queremos acessar, no nosso caso foi ("cnome").*/
+
+            background-color: rgb(255, 0, 0); /* Aqui nos só criamos a Formatação que servira para todos os Elementos daquela Coluna. Aqui o Background fica vermelho*/
+        }
+        col.cidade{ /* Apenas mostrando o que o Parâmetro (span) é capaz de fazer expandindo o seu efeito para mais colunas.*/
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabela</h1>
+    <table>
+        <caption>Cadastro</caption>
+
+        <!-- Para destacarmos uma Linha (row) é muito simples basta criar uma Classe na Tag (tr) mas para ddestacar Colunas não é tão facil quanto parece e para isso existe a Tag (colgroup)-->
+
+        <colgroup>
+            <!-- Dentro desta Tag nos vamos criar mais Tag's só que dessa vez seram Tag (col) que devem corresponder a quantidade de colunas que temos em nossa Tabela, vejá:-->
+             <!-- Obs : Para que isso Funcione as Tag's (th) que são consideradas "Colunas" devem ter o seu Escopo de Coluna, a Tag (th) que não tiver seu Escopo definido não ira ser considerada.-->
+             <col class="cnome"> <!-- Agora para que isso Funcione você deve Criar uma Class na Tag (col), no entanto o nome desta Class é especial, vejá o "padrão" que o Nome desta Class da Tag (col) que criamos aqui tem.-->
+             <!-- Perceba que o nome desta Class tem um "c" primeiro para simbolizar que é de fato realmente uma Coluna e qdepois ele tem o mesmo Conteúdo que a respectiva Tag (th) tem. Obs : A Tag (th) aqui é uma coluna tá eu acho que vou parar a Explicação para não bagunçar ainda mais as coisas.-->
+             <col class="csexo">
+             <col class="cidade" span="2"> <!-- Obs : Aqui nos podemos usar o Parâmetro (span) para expandir o efeito para mais colunas,aqui nos expandimos para duas colunas, isso pode ser útil na Formatação no Css.-->
+             <!-- Se você quiser ver a Formatação que fizemos desta Coluna usando o Parâmetro (span) vá para a Linha 34 de Código.-->
+             <col class="cprofissão">
+             <!-- Bem agora volte a Linha 30 do Codigo no nosso Css e vejá a Formatação que podemos dar à uma Coluna atravez desta Maneira que agiliza e facilita as coisas.-->
+        </colgroup>
+
+        <tr>
+            <th scope="col">Nome</th> <!-- Aqui nos já estamos Atribuindo os Escopos para as Tags (th) da nossa Tabela, isso é Obrigatório.-->
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Cláudio</td>
+            <td>M</td>
+            <td>28</td>
+            <td>Programador</td>
+
+        </tr>
+        <tr class="destaque">
+            <td>Gustavo</td>
+            <td>M</td>
+            <td>42</td>
+            <td>Professor</td>
+
+        </tr>
+        <tr>
+            <td>Hélio</td>
+            <td>M</td>
+            <td>19</td>
+            <td>Vendendor</td>
+
+        </tr>
+        <tr class="destaque">
+            <td>Maria</td>
+            <td>F</td>
+            <td>39</td>
+            <td>Médica</td>
+
+        </tr>
+        <tr>
+            <td>Otávio</td>
+            <td>M</td>
+            <td>22</td>
+            <td>Nutricionista</td>
+
+        </tr>
+    </table>
+</body>
+</html>
