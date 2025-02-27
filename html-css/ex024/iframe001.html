@@ -12,5 +12,42 @@
     <h1>Testando o uso do iframe</h1>
     <p>Acessando o Site do <iframe src="https://filmeflixhd.plus" frameborder="0"></iframe> para ver filmes.</p> <!-- O interessante do (iframe) como você pode ver é que nos passamos o Link de um site, no nosso caso foi um site de filmes e dentro da nossa Página foi criado digamos uma "Instância de aba de navegação" 100% Interativa, fazer assim é basicamente a mesma coisa que criar uma nova aba e acessar diretamente este Site de Filmes.-->
     <!-- Existem algums Links de Sites que não funcionam para colocarmos na Tag (iframe) porque mesmo colocando nada ira aparecer, determinados sites tem proteção contra o uso de (iframe) para que seus "dados do site do link" não vazem.-->
+
+    <p>
+        O Repósitorio do Guanabara
+
+        <!-- Aula 2 do cap 23 do Modulo 4-->
+        <!-- Aprofundando os Nossos Conhecimentos sobre a Tag (iframe)-->
+
+        <!-- Hoje em dia muitos navegadores de Pc e Celulares, de diferentes dispositivos na verdade já são muito avançados mas alguns Navegadores de Celular não tem suporte a Tag (iframe) e nos vamos aprender algu que podemos fazer pensando nestes casos.-->
+        <!-- Preste muita atenção no que nos vamos fazer agora em diante. Nos vamos primeiro abrir a Tag (iframe) que existe abaixo.-->
+        <iframe src="https://gustavoguanabara.github.io" frameborder="0">
+            <!-- Com esta Tag (iframe) aberta eu quero que você intenda que tudo que colocarmos aqui no meio ira aparecer somente caso o Navegador do Dispositivo do Úsuario NÂO TENHA Compatibilidade com esta Tag.-->
+
+            <!-- Nesse caso nos podemos deixar um Link que leve direto para o mesmo endereço, vejá:-->
+            <a href="https://gustavoguanabara.github.io">Curso em Vídio</a>
+            <!-- Nos até poderiamos ter deixado uma mensagem aqui com a Tag (p) por exemplo mas fazer assim deixando um link é uma ideia mais interessante.-->
+            
+            
+        </iframe>
+
+         também é bem legal.
+    </p>
+    <!-- Nos também podemos Configurar a Largura e a Altura de um (iframe). -->
+
+    <!--Por padrão o Tamanho de um (iframe) é de 300x150 px-->
+    <!-- Para Configurar a altura (height) e largura (width) da Tag (iframe) basta nos passarmos os valoores que queremos nos Parâmetros da Tag, veja:-->
+    <iframe src="https://filmeflixhd.plus" frameborder="0" height="500" width="300"></iframe>
+    <!-- Caso você configure a altura (height) e largura (width) da Tag (iframe) no Css e futuramente faça isso na Tag no Html o que ira prevalecer será as Configurações do Css, são elas que vão atuar com maios soberania sobre as Configurações feitas em Html.-->
+
+    <!-- Caso você possua uma Configuração em Css para o seu (iframe) este Css será a Configuração Soberana-->
+    <!-- Caso você não possua uma Configuração em Css para o seu (iframe) mas tenha uma Configuração no seu Html, esta Configuração do seu Html será a que vai ser levada em Consideração e sera a usada no site-->
+    <!-- Se você não possuir nada do dito anteriomente o que será usado será as Configurações Padrões da Tag como  o Tamanho de 300x150 px-->
+    
+    <!-- A Tag (iframe) também possui o Parâmetro (scrooling = "") que pode ter 3 valores ("auto", "yes" ou "no")
+    "auto" -> O Padrão, caso o conteúdo do iframe exceda o tamanho uma barra de rolagem será criada, caso o conteúdo do iframe não exceda o tamanho a barra de rolagem não será criada.
+    "yes" -> Caso o Conteúdo do iframe exceda ou não o tamanho ainda assim uma barra de rolagem será criada.
+    "no" -> Caso o Conteúdo do iframe exceda ou não o tamanho nenhuma barra de rolagem será criad, ou sejá aqui NÃO TE´RA barra de rolagem.-->
+
 </body>
 </html>
