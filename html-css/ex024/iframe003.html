@@ -36,7 +36,13 @@
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, rerum. Veniam ut molestias nisi excepturi ex! Deleniti temporibus dolorem similique hic sequi veniam cum repudiandae sapiente, amet nam in rerum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis, iusto nostrum. Fuga quisquam animi veniam ipsum aliquid hic, nesciunt voluptas vero laborum, eveniet eos quam unde eaque quos, sapiente perspiciatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, iste nostrum. Deleniti dolorem voluptatem modi impedit aperiam dolor repellendus enim. Repellat earum in culpa quasi iure dignissimos nam repellendus deleniti.</p>
 
     <!-- Bem, como nos criamos uma Lista mais pra cima do código, nos vamos carregar o conteúdo da lista dentro deste nosso (iframe) mas para isso o nosso (iframe) vai precisar de um Parâmetro muito importante, estamos falando do parâmetro (name) que acabamos de criar na Tag e atribuimos o valor ("frame")-->
-    <iframe id="tela" src="" name="frame" frameborder="1"> <!-- Vejá está linha de codigo e repare no parâmetro (name) que criamos aqui, agora vamos carregar o conteúdo da nossa Lista aqui neste (iframe), portanto, volte para a Linha de Código 27.-->
+    <iframe id="tela" src="" srcdoc="<h1>Escolha uma das três opções a cima</h1><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum assumenda magnam facere iusto quidem, debitis commodi? In dolores ipsam quibusdam sint, reiciendis eveniet atque, perspiciatis animi magnam eius sequi officia.</p> <img src = 'imagens\cursoemvideo-logo.png'>" name="frame" frameborder="1"> <!-- Vejá está linha de codigo e repare no parâmetro (name) que criamos aqui, agora vamos carregar o conteúdo da nossa Lista aqui neste (iframe), portanto, volte para a Linha de Código 27.-->
+
+        <!-- Aula 5 Cap 22 do Modulo 4-->
+        <!-- Conteúdo no (iframe) por Código -->
+        <!-- Você já deve ter notado que sempre que iniciamos a nossa Página este (iframe) começa vazio, nos podemos evitar isso e fazer com que o (iframe) possua um conteúdo, para fazermos isso existem algumas formas, vejá:-->
+        <!-- 1 - Nos Indicamos um caminho no Parâmetro (src) da Tag (iframe), isso funciona mas não é o que vamos usar aqui.-->
+        <!-- 2 - Nos vamos usar apenas o Parâmetro (srcdoc) que nos permite a crirmos conteúdos em html por meio deste Parâmetro, desta forma (srcdoc = "<h1>Oi meu nome é</h1> <p>Ronald</p>"), nos vamos carregar até uma imagem que baixamos dentro da pasta (ex024/imagens), faremos isso usando a Tag (<img src = 'caminho da imagem'>) vale lembrar que o Caminho da imagem deve estar dentro de Aspas Simples ('').-->
         <p>Infelismente o seu Navegador não suporta isso</p>
     </iframe>
 
