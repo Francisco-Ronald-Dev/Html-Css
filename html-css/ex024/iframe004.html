@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe</title>
+    <!-- Aula 7 vídio 8 Cap 22 do Modulo 4-->
+    <!-- Tornando iframes mais seguros-->
+</head>
+<body>
+    <!-- Aqui nos temos o nosso (iframe004.html) que é este Docummento que estamos editando e nos vamos carregar em um (iframe) o nosso Documento (pag004.html), vejá:-->
+    <h1>Meu site Principal</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias consequatur obcaecati id neque ex laboriosam officiis est repellendus nulla, eius ad quaerat quia nesciunt facere quis recusandae, praesentium sint. Voluptas! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo aperiam maxime dolore? Repellendus sint expedita molestiae dolorum maiores labore iusto exercitationem facere, voluptate hic commodi dolores nihil, corrupti pariatur eaque.</p>
+
+    <!-- Veja que abaixo nos criamos a Tag (iframe) e já indicamos o Caminho da nossa outra página, agora eu quero que você entenda que se este site (pag004.html) rodar dentro deste (iframe) e como você sabe a nossa (pag004.html) possui uma área ao qual podemos digitar o nosso Nome e um Botão ao qual podemos clicar para Informar o nosso Nome ao site e após Clicarmos neste Botão a tela meio que "recarrega" como se tivesse dado certo, se este (iframe) conseguir rodar o nosso (pag004.html) da maneira correta e da mesma forma que descrevemos aqui siguinifica que este (iframe) está capturando dados e é isso que nos vamos aprender a evitar.-->
+
+    <iframe src="paginas-extras/pag004.html" frameborder="0" sandbox="sandbox"> <!-- Para evitarmos isso existe Dois Parâmetros que podemos usar na tag (iframe) que nos fornece uma maior segurança, o Primeiro Parâmetro que estamos mencionando é o (sandbox) e para que ele consiga atuar corretamente nos devemos atribuir à ele o valor ("sandbox"), e o Segundo Parâmetro que mencionamos é o (referrerpolicy) nos podemos Traduzir este Parâmetro como sendo a "Política de Refêrencia" po padrão este Parâmetro possui o valor ("no-referrer-when-downgrade") mas o adequado mesmo a se fazermos é atribuirmos à este Parâmetro o valor ("no-referrer") que serve para que o Conteúdo carregado dentro do (iframe) não colete nenhum tipo de Dado do úsuario, pronto desta forma tudo está funcionando e protegido.-->
+
+        <!-- Ao Adicionarmos este Parâmetro (sandbox) mesmo que o nosso (pag004.html) continue sendo exibido pelo (iframe) acontece que o (iframe) já não consegue mais ter acesso aos Dados do (pag004.html), póis mesmo que sejá possivel escrever na área destinada ao Nome ao Clicarmos no Botão a Página não "Recarrega" como acontecia antes e este é um sinal de que este dado que é o nosso Nome não consegue ser meio que "enviado".-->
+
+        <!-- E o Segundo Parâmetro que mencionamos é o (referrerpolicy) nos podemos Traduzir este Parâmetro como sendo a "Política de Refêrencia" po padrão este Parâmetro possui o valor ("no-referrer-when-downgrade") mas o adequado mesmo a se fazermos é atribuirmos à este Parâmetro o valor ("no-referrer") que serve para que o Conteúdo carregado dentro do (iframe) não colete nenhum tipo de Dado do úsuario-->
+
+        <!-- Você já deve ter ouvido falar que o Google coleta Informações dos úsuarios para poder mostrar propagandas, este Segundo Parâmetro que explicamos a cima serve para evitar que o Conteúdo carregado dentro de um (iframe) colete Dados do úsuario.-->
+
+        <!-- Com esta Tag (iframe) aberta eu quero que você entenda que tudo que colocarmos aqui no meio ira aparecer somente caso o Navegador do Dispositivo do Úsuario NÂO TENHA Compatibilidade com esta Tag.-->
+        <!-- Neste caso nos vamos deixar uma mensagem com a Tag (p) avisando apenas a incompatibilidade do Navegador.-->
+        <p>Seu Navegador não é compativel com isso</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ad ut accusamus praesentium iure delectus, distinctio odio pariatur ipsam hic, incidunt voluptate. Doloremque laboriosam cupiditate laudantium provident accusantium labore tempore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quibusdam autem ex mollitia aliquid! Dolorem libero laborum quos incidunt asperiores, maiores, iure nisi, explicabo vitae debitis quia ullam perspiciatis quam?</p>
+
+    <!-- Caso você queira que este nosso (iframe) tenta uma certa liberdade em relação a carregar5 as Funcionalidades das outras Páginas nos podemos fazer isso mas antes eu quero que você saiba que no (iframe) lá de cima quando nos usamos o Parâmetro (sandbox = "sandbox") todas as Configurações de Segurança foram ligadas no Maximo para evitar que dados nossos fossem roubados e isso acaba impactando na funcionalidade de alguas Mecânicas do Site, como o Botão que paro de Funcionar, mas caso você queira podemos dar uma Amenizada nisso, vejá o Proximo (iframe) abaixo.-->
+
+    <!-- Logo abaixo nos criamos outro (iframe) para ensinarmos como podemos permitir com que o (iframe) ou o Conteúdo do (iframe) possa acessar alguns dados, para isso nos vamos precisar novamente do Parâmetro (sandbox) mas nps vamos atribuir outros Valores à ele.-->
+    <iframe src="paginas-extras/pag004.html" frameborder="0" sandbox="allow-same-origin allow-forms allow allow-scripts" referrerpolicy="no-referrer"> <!-- Como você pode ver nos usamos o Parâmetro (sandbox) e atribuimos os Seguintes valores para que possamos ter um acesso mesmo que limitado ao conteúdo dos nossos (iframe) e assim também o conteúdo do nosso (iframe) tem acesso aos Dados do Úsuario.-->
+        <!-- 1 - "allow-same-origin" serve para que o nosso (iframe) carregue conteúdos apenas da mesma origem-->
+        <!-- 2 - "allow-forms" serve para que o nosso (iframe) carregue formulários-->
+        <!-- 3 - "allow-scripts" serve para que o nosso (iframe) carregue scripts-->
+
+
+        <!-- Com esta Tag (iframe) aberta eu quero que você entenda que tudo que colocarmos aqui no meio ira aparecer somente caso o Navegador do Dispositivo do Úsuario NÂO TENHA Compatibilidade com esta Tag.-->
+        <!-- Neste caso nos vamos deixar uma mensagem com a Tag (p) avisando apenas a incompatibilidade do Navegador.-->
+        <p>Seu Navegador não é compativel com isso</p>
+    </iframe>
+</body>
+</html>

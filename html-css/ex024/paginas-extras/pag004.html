@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <!-- Aula 7 vídio 8 Cap 22 do Modulo 4-->
+    <!-- Tornando iframes mais seguros-->
+</head>
+<body>
+    <!-- Outros sites podem tentar usar um (iframe) para permitir ataques e pegar dados do nosso site como dados do úsuario, uma coisa que podemos fazer é bloquear isso e é isso que vamos aprender nesta Aula.-->
+    <h1>Cadastre-se aqui</h1>
+    <form action="cadastro.php" method="get"> <!-- Aqui nos usamos a Tag (form) para criarmos um formulário, nos ainda não nos aprofundamos nisso e vamos ver mais sobre este conteúdo mais para frente no curso.-->
+
+        <p>
+            Nome:
+            <input type="text" name="nome" id="nome">
+            <input type="submit" value="Cadastrar">
+        </p>
+    </form>
+    <!-- Agora nos vamos criar o Documento (iframe004.html) e este Documento ira carregar este nosso (pag004.html)-->
+</body>
+</html>
