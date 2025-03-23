@@ -8,12 +8,20 @@
      <!-- Nesta Aula nos vamos aprender e dar ínicio aos nossos estudos sobre Formúlarios, vamos aprender a cria-los e com o tempo vamos aprender cada vez mais e mais sobre eles.-->
 </head>
 <body>
+    <!-- Aula 2/ Vídio 18 do Cap 24 do Modulo 4-->
+     <!-- Agora nos vamos aprender algumas configurações e Conexões Importântes entre o Fomrúlario e os Dados dele.-->
     <h1>Meu Primeiro Formúlario.</h1>
     <!-- Todos os Fomúlarios devem estar dentro da Tag (form)-->
-    <form action="">
-        <p>Nome : <input type="text" name="Nome" id="nome"></p>
-        <p>Sobrenome : <input type="text" name="Sobrenome" id="sobrenome"></p>
-        <p><input type="submit" value="Enviar"></p>
+    <form action="cadastro.php" autocomplete="off"> <!-- As vezes acontece de vc já ter preenchido um Formúlario antes e quando você vai preencher ele novamente ele acaba sugerindo as respostas que você deu Anteriormente, para resolvermos isso nos usamos este Parâmetro (autocomplete) e atribuimos à ele o valor ("off") que desliga e desativa está Sugestão de respostas.-->
+
+        
+        <p><label for="inome">Nome</label> : <input type="text" name="Nome" id="inome"></p> <!-- Aqui nos temos o Campo para Preenchermos com o nosso Nome.-->
+        <!-- No entanto o Conteúdo ("Nome") da Tag (p) não tem Ligação Nenhuma com a Tag (input) do Tipo texto que usamos acima, para Criarmos está Ligação nos usamos a Tag (label) que tem o Parâmetro (for = id/name) que exige um (id) ou (name), e nos atribuimos à este Parâmetro o (id) da Tag (input) do tipo Texto, agora sim nos criamos a Ligação entre estes Dados.-->
+        <p><label for="isobrenome">Sobrenome</label> : <input type="text" name="Sobrenome" id="isobrenome"></p> <!-- Aqui nos temos o Campo para preenchermos com o nosso Sobrenome.-->
+        <!-- No entanto o Conteúdo ("Sobrenome") da Tag (p) não tem Ligação Nenhuma com a Tag (input) do Tipo texto que usamos acima, para Criarmos está Ligação nos usamos a Tag (label) que tem o Parâmetro (for = id/name) que exige um (id) ou um (name), e nos atribuimos à este Parâmetro o (id) da Tag (input) do tipo Texto, agora sim nos criamos a Ligação entre estes Dados.-->
+        <p><input type="submit" value="Enviar"></p> <!-- Aqui nos temos o Botão para enviarmos os nossos Dados, no entanto, estes dados não estão indo para lugar Nenhum, nos temos que guardar estes Dados enviados, para fazer isso nos temos que Primeiramente usar o Parâmetro (action) da Tag (form) e neste Parâmetro nos vamos Atribuir um Documento PHP exatamente como fizemos aqui, ese Documento será o Responsavel por guardar os Dados aqui para que possamos usa-los depois.-->
+
+        <!-- Tudo que fizemos até aqui é essencial para um site para um Formúlario, principalmente a questão do (label), na~se faz um Fomrúlario sem usar o (label) póis isso dificulta os Mecanismos de Busca, dificulta a Experiência do úsuario e o Trabalho do Navegador. E usar o (label) é muito eficiênte em tudo mais se destaca na eficiência em Celulares onde as Telas são mais extreitas e Menos Compridas, os (label) dão um destaque nos Dados que possuem Ligação e isso facilita muito o entendimento de quem acessa o Site ou o Formúlario pelo Celular.-->
     </form>
     <!-- Aqui nos fizemos um Formúlario no seu estado mais Básico, comforme formos anaçando neste Capítulo nos vamos aprendendo mais sobre.-->
 </body>
