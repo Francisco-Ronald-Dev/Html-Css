@@ -12,7 +12,7 @@
      <!-- Agora nos vamos aprender algumas configurações e Conexões Importântes entre o Fomrúlario e os Dados dele.-->
     <h1>Meu Primeiro Formúlario.</h1>
     <!-- Todos os Fomúlarios devem estar dentro da Tag (form)-->
-    <form action="cadastro.php" autocomplete="off"> <!-- As vezes acontece de vc já ter preenchido um Formúlario antes e quando você vai preencher ele novamente ele acaba sugerindo as respostas que você deu Anteriormente, para resolvermos isso nos usamos este Parâmetro (autocomplete) e atribuimos à ele o valor ("off") que desliga e desativa está Sugestão de respostas.-->
+    <form action="cadastro.php" method="post" autocomplete="off"> <!-- As vezes acontece de vc já ter preenchido um Formúlario antes e quando você vai preencher ele novamente ele acaba sugerindo as respostas que você deu Anteriormente, para resolvermos isso nos usamos este Parâmetro (autocomplete) e atribuimos à ele o valor ("off") que desliga e desativa está Sugestão de respostas.-->
 
         
         <p><label for="inome">Nome</label> : <input type="text" name="Nome" id="inome"></p> <!-- Aqui nos temos o Campo para Preenchermos com o nosso Nome.-->

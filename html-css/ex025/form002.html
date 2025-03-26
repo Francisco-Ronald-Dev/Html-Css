@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Aula 4 / Vídio 20 do Cap 24 do Modulo 4-->
+     <!-- Criando caixas de texto e de senha-->
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iusu">Úsuario :</label>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="8" size="50" autocomplete="username"> <!-- Aqui nos adicionamos o Parâmetro (requered) póis este Dado é obrigatório.-->
+            <!-- No (input) a cima nos usamos os Parâmetros (minlenght) e (maxlenght) para definirmos um valor Minimo e Maximo para a quantidade de Caracteres neste Dado.-->
+            <!-- No (input) acima nos também usamos o Parâmetro (size) e atribuimos à ele o valor de ("50").-->
+            <!-- Aqui nos também Informamos nos Parâmetros desta Tag (input) que o (autocomplite) dela é um ("username"), póis este é o tipo de dado desta Caixa. Mas isso só funcionará se o Parâmetro (autocomplite) da Tag (form) estiver Habilitado, se estiver ("on").-->
+        </p>
+        <p>
+            <label for="isen"> Senha :</label>
+            <!-- Abaixo nos adicionamos o Parâmetro (requered) póis este Dado é obrigatório.-->
+            <input type="password" name="sen" id="isen" required minlength="4" maxlength="6" placeholder="Sua Senha vai aqui" autocomplete="current-password"> <!-- O (input:password) é o Input pra ser utilizado quando se trata de pedir senha.-->
+            <!-- No (input) a cima nos usamos os Parâmetros (minlenght) e (maxlenght) para definirmos um valor Minimo e Maximo para a quantidade de Caracteres neste Dado.--> 
+            <!-- Aqui nos usamos o Parâmetro (placeholder).-->
+            <!-- Aqui nos também Informamos nos Parâmetros desta Tag (input) que o (autocomplite) dela é um ("current-password"), póis este é o tipo de dado desta Caixa. Mas isso só funcionará se o Parâmetro (autocomplite) da Tag (form) estiver Habilitado, se estiver ("on").-->
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+        <!-- Para evitar que o Usuário envie o Formulário quando ele estiver vazio nos fizemos o seguinte, nos adicionamos o Parâmetro (required) nas Tags (input) que serão obrigatórias.-->
+
+        <!-- Se você quiser definir um valor Minimo e um valor Maximo para O Nome do Usuário e a Senha, basta usar os Parâmetros (minlenght) e (maxlenght) nas Tag (input), vejá:-->
+
+        <!-- Nos podemos usar o Parâmetro (size) para definirmos quantos caracteres a Caixa de resposta que é o nosso (input) ira mostrar por vez.-->
+
+        <!-- Nos também podemos usar o Parâmetro (placeholder) nas Tag (imput) e este Parâmetro é mais uma dica nas caixas de resposta, este Dado ajuda a entender mais ou menos qual deve ser a Resposta.-->
+
+        <!-- Você já aprendeu a desligar o Preenchemento Automatico das Caixas de Resposta apenas usando o Parâmetro (autocomplite = "off") na Tag (form), mas po padrão isto já vem Habilitado e você pode Esclarecere com a Tag (autocomplit) de que Dado se Trata as Tag (input) presentes no seu Formulário, vejá:-->
+    </form>
+</body>
+</html>
