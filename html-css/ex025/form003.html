@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Aula 5 / Vídio 21 do Cap 24 do Modulo 4-->
+    <!-- Criando Formúlarios com Dados de Números, Dia, Semana, Mês , Ano e Tempo-->
+</head>
+<body>
+    <h1>Teste de Formúlario</h1>
+    <form action="cadastro.php" method="get"><!-- Todo Formúlario em Html precisa ser criado usando a Tag (form)-->
+        <!-- Nos vamos primeiramente aprender a Trabalharmos com Números.-->
+        <p>
+            <label for="imedia">media</label> <!-- Como você sabe nos usamos a Tag (label) para criarmos uma Conexão entre os Dados e os Dados das caixa de respostas.-->
+            <input type="number" name="media" id="imedia" min="2" max="5" step="0.5" required value="4.5"> <!-- Aqui nos usamos o (input:number) este Input do Tipo Number só aceita Números e nenhum outro caractere que não seja isso.-->
+            <!-- Anteriormente quando queriamos Limitar a quantidade de Caracteres no Formúlario nos usavamos o (min-lenght) e (max-langht) mas destá vez nos somos obrigados a usar (min) e (max) póis são para uma Caixa Númerica.-->
+
+            <!-- Nos usamos o Parâmetro (step) para indicar o "passo" da nota, este valor do (step) vai indicar de quanto em quanto o valor vai aumentar ou diminuir.-->
+
+            <!-- Nos usamos o Parâmetro (required) póis ter um valor ali será algu obrigatório.-->
+
+            <!-- Se você quiser que a Caixa de Resposta já tenha um Valor automaticamente basta usar o Parâmetro (value) como nos usamos aqui de exemplo.-->
+        </p>
+        <p>
+            <!-- Agora nos vamos aprender a usarmos Datas nos nossos Fomrúlarios.-->
+            <label for="imonth">Período Letivo</label>
+            <input type="month" name="month" id="imonth" value="2020-07">
+        </p>
+        <p>
+            <!-- Agora nos vamos aprender a usar o Dado do Dia exato de algum coisa de exemplo, vamos usar o Dia exato de uma prova por exemplo.-->
+            <label for="idia">Dia da prova</label>
+            <input type="date" name="dia" id="idia" value="2020-07-14">
+        </p>
+        <p>
+            <!-- Agora nos vamos aprender a trabalharmos com Horarios-->
+            <label for="ihora">Horario da Prova</label>
+            <input type="time" name="hora" id="ihora">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Resetar">
+        </p>
+    </form> 
+
+</body>
+</html>
