@@ -10,18 +10,30 @@
 <body>
     <h1>Exemplo de Formulário</h1>
     <form action="cadastro.php" method="get" autocomplete="on">
-        <p>
-            <label for="iemail">E-mail</label>
-            <input type="email" name="email" id="iemail" required autocomplete="email">
-        </p>
-        <p>
-            <label for="itel">Telefone</label>
-            <input type="tel" name="tel" id="itel" required autocomplete="tel">
-        </p>
-        <p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Resetar">
-        </p>
+        <fildset>
+            <legend>Dados pessoais</legend>
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome" minlength="5" maxlength="20" required>
+            </p>
+            <p>
+                <label for="iemail">E-mail</label>
+                <input type="email" name="email" id="iemail" required autocomplete="email">
+            </p>
+            <p>
+                <label for="itel">Telefone</label>
+                <!--Existe uma coisa que nos chamaos de Expressões Regulares (RegExpression) que nos vamos usar aqui agora, toda Expressão Regular sempre ira ser definida pelo Parâmetro (pattern)-->
+                <!-- Toda Expressão Regfular começa com este Caracter "^" e termina com o cifrão "$"-->
+                <!-- Entre o começo e o fim de uma expressão Regular nos temos o conteúdo dela que informa quais números serão aceitos e depois quantos serão lidos, vejá a baixo na linha 22:-->
+                <input type="tel" name="tel" id="itel" required autocomplete="tel" pattern="^[0-9]{4}-[0-9]{4}$">
+            </p>
+            <!-- Estudar mais sobre RegExpressions (Expressões Regulares)-->
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Resetar">
+            </p>
+            <!-- Para finalizar esta Aula iremos ensinar a usar a Tag (fildset) que é uma Tag de Agrupamento de Formulários, dentro desta Tag nois ainda usamo a Tag (legend) que é uma "Legenda" do que contém neste Formulários.-->
+        </fildset>
     </form>
     
 </body>
