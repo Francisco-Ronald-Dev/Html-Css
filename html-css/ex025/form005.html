@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <!-- Aula 8 / Vídio 24 do Cap 24 do Modulo 4 -->
+    <!-- Checkbox e Radio Button em Html-->
+</head>
+<body>
+    <h1>Exemplo de Formulários</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fildset>
+            <legend>Esportes Favoritos</legend>
+            <!-- A O (Input:checkbox) cria uma caixinha que podemos marcar e ao usarmos o (label) para criar o "anexo" entre o Tag e o Conteúdo, podemos acionar a caixa apenas clicando no seu Conteúdo.-->
+            <input type="checkbox" name="esbas" id="isbas"><label for="isbas">Basquete</label> <br> <!-- A Tag (br) que usamos aqui é apenas para fazermos a quebra de linha.-->
+            <!-- Se você usar o Parâmetro (checked) em algum Input como estes ele ira iniciar já marcado como fizemos de exemplo a baixo:-->
+            <input type="checkbox" name="esfot" id="isfut" checked><label for="isfut">Futebol</label> <br>
+            <input type="checkbox" name="esnat" id="isnat"><label for="isnat">Natação</label> <br>
+            <input type="checkbox" name="esten" id="isten"><label for="isten">Tênis</label> <br>
+        </fildset>
+        <fieldset>
+            <legend>Sexo</legend>
+            <!-- Agora nos vamos ver outro tipo de Input que é o (Input:radio) que é semelhante ao (Input:checkbox) mas a intenção deste aqui é que seja essencial marcarmos apenas 1 item e para fazermos isto todos terão que ter o mesmo valor no seu Parâmetro (name), o valor que eles tem aqui é "sexo" e com isso tudo funciona corretamente.-->
+            <input type="radio" name="sexo" id="isxmas" value="H"> <label for="isxmas">Homem</label> <!-- Aqui nos usamos o Parâmetro (value) que aparecerá salvo no URL depois que Respondermos e enviarmos isto, fizemos a mesma coisa na linha de código a baixo-->
+            <input type="radio" name="sexo" id="isxmul" value="M"> <label for="isxmul">Mulher</label>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
