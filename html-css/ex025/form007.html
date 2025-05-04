@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <!-- Aula 10 / Vídio 26 do Cap 24 do Modulo 4 -->
+    <!-- Select, datalist e textarea em HTML-->
+    <!-- Estes elementos que vamos aprender agora não dependem de (Inputs) ele ficam mais por fora disso.-->
+</head>
+<body>
+    <h1>Exemplo de Exercício</h1>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="iest">Estado</label> <!-- Ultimamente nos andamos mechendo muito com a Tag (label) e eu preciso explicar isso já que vamos "complicar" um pouco as coisas, Este Label que usamos aqui é um "Label Elemento" jaja vamos usar um outro Label que será um "Label Atributo"-->
+            <!--Aqui nos vamos pedir para que o úsuario informe o Estado em que ele Reside e para fazer isso nos podemos usar a Tag (select)-->
+            <select name="est" id="iest">
+                <!-- Agora para nos criarmos as opções nos usamos a Tag (option) desta forma aqui:-->
+
+                <!-- Como os Estados que temos a baixo são todos da Região Sudeste nos podemos usar a Tag (optgroup) para agruparmos estes elementos HTML em uma única coisa, um único grupo mas acontece que dentro da Tag (optgroup) nos usamos também o Parâmetro (label) que aqui é um "Label Atributo" bem diferente do que vemos até aqui né kkk.-->
+                <option value="" selected>---Escolha---</option> <!-- O Parâmetro (selected) que usamos aqui é semelhante ao parâmetro (checked) que usamos em outro Arquivo Html, este Parâmetro informa quem vai ser exibido primeiro.-->
+                <optgroup label="Região Sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+
+                <!-- Como os Estados que temos a baixo são todos da Região Nordeste nos podemos usar a Tag (optgroup) para agruparmos estes elementos HTML em uma única coisa, um único grupo mas acontece que dentro da Tag (optgroup) nos usamos também o Parâmetro (label) que aqui é um "Label Atributo" bem diferente do que vemos até aqui né kkk.-->
+                <optgroup label="Região Nordeste">
+                    <option value="MA">Maranhão</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="iprof">Profissão</label>
+            <!-- Nos já vimos o "select" agora nos vamos ver os "datalist".-->
+             <input type="text" name="prof" id="iprof" list="lstprof">
+             <datalist id="lstprof"> <!-- Aqui nos usamos a Tag (datalist) para criarmos uma lista que vamos usa-la depois, faltando apenas chama-la, faremos isso jaja, por enquanto vamos apenas adicionar o conteúdo da lista, faremos isso usando a Tag (option). Pronto, depois que terminamos de criar os conteúdos desta lista nos adicionamos o Parâmetro (id) na Tag (datalist) e adiocionamos o Parâmetro (list) na Tag (input:text) e neste parâmetro nos passamos o id da Lista que queremos usar.-->
+                <option value="ADM">Administrador</option>
+                <option value="CONT">Contabilista</option>
+                <option value="DEV">Desenvovedor</option>
+                <option value="PROF">Professor</option>
+             </datalist>
+        </p>
+        <p>
+            <label for="imsg">Mensagem :</label><br>
+            <!-- aqui nos vamos usar a Tag (textarea) que nos permite escrevermos coisas, mensagens e etc...-->
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea> <!-- O ideal é que quando usarmos isto nos também devemos estar usando um (form:post) por causa das limitações que o Método (get) possui nos resolvemos este Problema mudando para o (form:post) ok.-->
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
