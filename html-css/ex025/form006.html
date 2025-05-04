@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <!-- Aula 9 / Vídio 25 do Cap 24 do Modulo 4 -->
+    <!-- Elementos Color, range e Files em HTML-->
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="icor">Cor</label> <!-- Aqui nos usamos o (label) pra fazer o "Anexo" com o id do (input) a baixo.-->
+            <!-- A baixo nos vamos usar um (input:color) se você quiser personalizar a cor que apareça por padrão basta usar o Parâmetro (value) e atribuir à este Parâmetro o Código Hexadecimal da Cor, exatamente como fizemos a baixo: -->
+            <input type="color" name="cor" id="icor" value="#00ff00"> <!-- Aqui nos estamos usando o (input:color) que nos da uma ótima variedade de cores para que possamos trabalhar com uma delas.-->
+        </p>
+        <p>
+            <label for="inivel">Nível de Satisfação</label>
+            <input type="range" name="nivel" id="inivel" min="1" max="5" value="1">
+        </p>
+        <p>
+            <!-- O proximo Input que nos vamos ver aqui é o (Input:file), vejá:-->
+            <label for="ifoto">Foto de Perfil:</label>
+            <input type="file" name="foto" id="ifoto"> <!-- Uma Observação MUITO IMPORTANTE é que quando nos usarmos este tipo de Input nos não podemos usar um (form:get) nos temos que estar em um (form:post) póis assim os dados terão um pouco mais de segurança e por causa da Limitação de Tamanho do (form:get) que é de 3.000 Bates e por causa destas coisas usamos o (form:post).-->
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
