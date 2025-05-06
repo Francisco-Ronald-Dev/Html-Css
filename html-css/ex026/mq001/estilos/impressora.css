@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+/*Estilo para Impressoras.*/
+
+*{
+    margin: 10px;
+    padding: 10px;
+}
+
+html{
+    font-family: 'Courier New', Courier, monospace; /*Esta Fonte é ideal para impressão ou impressoras mesmo.*/
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+/* Se você quiser remover um elemento Html na impressão, basta azer o seguinte, você escolhe qual elemento remover, como exemplo vamos usar a Tag (menu), basta fazer isso:*/
+menu{
+    display: none; /* Isto já resolve o nosso problema ocultando está tag e à removendo na Impressão.*/
+}
+
+article{
+    width: 100%;
+}
+
+/* Se você quiser adicionar algu na Impressão, basta fazer o seguinte, aqui usaremos como exemplo a nossa Tag (article), vejá:*/
+article::after{
+    content: 'Esse artigo foi impresso através do site www.cursoemvidio.com'; /* Pronto, com isso nos conseguimos adicionar algumas coisas na nossa Impressão.*/
+}
