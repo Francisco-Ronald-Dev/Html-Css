@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <!-- Aula 11 / Vídio 27 do Cap 24 do Modulo 4 -->
+    <!-- Elemento Output em Formulários HTML-->
+    <!-- Neste Exercício nos vamos usar um pouco de JavaScript-->
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+
+    <form action="cadastro.php" method="get">
+        <p>
+            <label for="iano">Em que ano você nasceu?</label>
+            <!-- Na Tag (input) a baixo nos já estamos usando um pouco mais de JavaScript incluindo até uma chamada de uma Função que criamos dentro da Tag (script) na linha 30 do código.-->
+            <input type="number" name="ano" id="iano" min="1900" max="2025" value="2025" oninput="CalcIdade()">
+        </p>
+        <p>
+            <label for="iidade">sua idade é :</label>
+            <output id="iidade">0</output>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+    <script>
+        function CalcIdade(){
+            let Atual = new Date().getFullYear()
+            iidade.innerHTML = Number(Atual) - Number(iano.value)
+        }
+    </script>
+</body>
+</html>

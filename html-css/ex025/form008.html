@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <!-- Aula 11 / Vídio 27 do Cap 24 do Modulo 4 -->
+    <!-- Elemento Output em Formulários HTML-->
+    <!-- Neste Exercício nos vamos usar um pouco de JavaScript-->
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="in1">Número 1: </label>
+            <!-- Você pode perceber que na nossa tag a baixo nos já usamos um pouco de Java Script.-->
+            <input type="number" name="n1" id="in1" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+        <p>
+            <label for="in2">Número 2: </label>
+            <input type="number" name="n2" id="in2" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+        <p>
+            <label for="isoma">Soma :</label>
+            <output name="soma" id="isoma">0</output> <!-- A diferença entre o (input) e o (output) é que o (input) é um campo que podemos auterar e o (output) é um campo que não podemos auterar diretamente.-->
+            <!-- Uma Observação muito importante que deve ser feita é que quando nos clicarmos em ("Enviar") os valores da nossa Tag (output) não serão exibidos na URL, isso acontece porque diferente da nossa Tag (input) está Tag (output) não é para ser enviada, os dados dela são apenas para serem exibidos.-->
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
