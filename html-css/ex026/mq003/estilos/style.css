@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+@media all {
+    /*Declarações Gerais.*/
+    *{
+        margin: 0px;
+        padding: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    html,body{ /*Só lembrando que quando nos criamos um Seletor desta forma (html,body{}) usando a Vírgula, as Configurações deste Seletor vão servir para as Duas Tags.*/
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(33, 64, 224);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    h1{
+        color: white;
+        text-shadow: 2px 2px 0px rgb(18, 23, 149);
+        padding: 10px;
+    }
+
+    /* Antes de avançarmos quero lembrar que aqui estamos trabalhando com uma possivel idea de Media Queries pré determinados, e é por isso que nos não estamos usando Media Querys com base no Width ainda.*/
+    /*Logo a baixo desta linha de código nos já estamos usando também o Media Type, que definimos como "screen" e depois disso usamos o Media Feature que fica bem claro e evidente devido a presença dos Parentes, aqui o Media Feature é "(orientation: portrait)"*/
+
+}
+
+@media screen and (orientation: portrait) {
+    /* Aparelho em pé (Portait).*/
+
+    body{
+        /*background-color: yellow; Teste usar apenas este comando caso tenha dúvidas.*/
+        background-image: url("../imagens/cev-portrait.jpg");
+        background-position: center bottom; /*Aqui nos configuramos apenas a Imagem que é exibida quando a tela está "em pé" que na verdade se exibe isso quando a Altura da tela é maior que a Largura, aqui nos configuramos para que a Imagem fique posicionada no centro e no canto inferior da tela.*/
+    }
+}
+
+/*Logo a baixo desta linha de código nos já estamos usando também o Media Type, que definimos como "screen" e depois disso usamos o Media Feature que fica bem claro e evidente devido a presença dos Parentes, aqui o Media Feature é "(orientation: landscape)"*/
+
+@media screen and (orientation: landscape) {
+    /* Aparelho Deitado (Landscape).*/
+    
+    body{
+        /*background-color: rgb(255, 204, 0); Teste usar apenas este comando caso teha dúvidas.*/
+        background-image: url("../imagens/cev-landscape.jpg");
+        background-position: left bottom; /*Aqui nos configuramos apenas a Imagem que é exibida quando a tela está "deitada" que na verdade se exibe isso quando a Largura é maior que a Altura da tela, aqui nos configuramos para que a Imagem fique posicionada no canto esquerdo inferior da tela.*/
+    }
+}
