@@ -1,3 +1,13 @@
 @charset "UTF-8";
 
 /* Aparelho Deitado (Landscape).*/
+
+/* Aula 4 / Vídio 31 do Cap 25 do Modulo 4 */
+/* Seguindo a Orientação do Dispositivo*/
+/*Comece no Arquivo (estilos;style.css)*/
+
+body{
+    /*background-color: rgb(255, 204, 0); Teste usar apenas este comando caso teha dúvidas.*/
+    background-image: url("../imagens/cev-landscape.jpg");
+    background-position: left bottom; /*Aqui nos configuramos apenas a Imagem que é exibida quando a tela está "deitada" que na verdade se exibe isso quando a Largura é maior que a Altura da tela, aqui nos configuramos para que a Imagem fique posicionada no canto esquerdo inferior da tela.*/
+}

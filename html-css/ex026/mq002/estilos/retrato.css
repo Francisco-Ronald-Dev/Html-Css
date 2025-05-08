@@ -1,3 +1,13 @@
 @charset "UTF-8";
 
 /* Aparelho em pé (Portait).*/
+
+/* Aula 4 / Vídio 31 do Cap 25 do Modulo 4 */
+/* Seguindo a Orientação do Dispositivo*/
+/*Comece no Arquivo (estilos;style.css)*/
+
+body{
+    /*background-color: yellow; Teste usar apenas este comando caso tenha dúvidas.*/
+    background-image: url("../imagens/cev-portrait.jpg");
+    background-position: center bottom; /*Aqui nos configuramos apenas a Imagem que é exibida quando a tela está "em pé" que na verdade se exibe isso quando a Altura da tela é maior que a Largura, aqui nos configuramos para que a Imagem fique posicionada no centro e no canto inferior da tela.*/
+}
