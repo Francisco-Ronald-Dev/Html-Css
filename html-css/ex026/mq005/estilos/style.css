@@ -1,1 +1,59 @@
 @charset "UTF-8";
+/*Aula 10 / Vídio 37 do Cap 25 do Modulo 4*/
+/*Configurando o Layout do Projeto*/
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body, html{
+    background-color: lightgray;
+}
+
+header > h1{
+    padding: 10px;
+    text-align: center;
+}
+
+menu{
+    display: block;
+}
+
+menu > ul{
+    list-style-type: none; /* Toda lista quando é feita possui umas "Bolinhas" este comando remove estas "Bolinhas" das listas.*/
+}
+
+menu > ul > li > a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgb(83, 83, 83);
+    color: white;
+    border-top: 2px solid gray;
+}
+
+menu > ul > li > a :hover{
+    background-color: gray;
+}
+
+main{
+    width: 90vw;
+    background-color: white;
+    margin-top: 10px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+article > h1{
+    padding-bottom: 20px;
+}
+
+article > p{
+    text-align: justify;
+    margin-bottom: 20px;
+    text-indent: 20px; /*Este Parâmetro (text-indent : 20px;) cria o espaçamento nos Parágrafos.*/
+}
