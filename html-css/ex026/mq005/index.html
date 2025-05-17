@@ -12,8 +12,12 @@
     <link rel="stylesheet" href="estilos/style.css">
     <!-- Aula 9 / Vídio 36 do Cap 25 do Modulo 4-->
     <!-- Aqui nos vamos criar um Menu Responsivel que se adapte a Diferentes telas, essa é a proposta do Media Query.-->
+
+    <!-- Aula 12 / Vídio 39 do Cap 25 do Modulo 4-->
+    <!-- Criando Media Queries para outros dispositivos-->
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho()"> <!-- Devido ao problema que tivemos no site ao mudarmos o tamanho da Viewport nos vamos aplicar Java Script aqui para corrigirmos este problema, Uma coisa muito interessante é que estamos chamando uma Função do nosso Java Script dentro dos Parâmetros da Tag (body) e vale ressaltar que toda vez que nos formos fazer isso nos teremos que usar um Parâmetro que comece com "on" pode reparar isso como é verdade.-->
     <header>
         <h1>Meu site</h1>
         <!-- Como nos vamos criar um Menu nos vamos usar a Tag (menu) e faremos isso como uma lista não númerada.-->
@@ -40,6 +44,16 @@
     </main>
 
     <script> /* Aqui nos temos os nossos códigos em JavaScript*/
+
+        function mudouTamanho(){
+            if(window.innerWidth >= 768){
+                itens.style.display = 'block'
+            }else{
+                itens.style.display = 'none'
+            }
+
+            }
+
         function clickMenu(){
             if(itens.style.display == "block"){
                 /*Quando o display da Tag (menu) recebe o valor "none" todas as opções são escondidas automaticamente.*/
@@ -48,7 +62,7 @@
                 /*Quando o display da Tag (menu) recebe o valor "block" todas as opções são exibidas automaticamente.*/
                 itens.style.display = "block"
             }
-             
+
         }
     </script>
 </body>

@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+/* Typical Device BreakPoints
+Pequenas telas : até 600px
+Celulares : 600px até 768px
+Tablets : 768px até 992px
+Desktop : 992px até 1200px
+Grandes Telas : acima de 1200px*/
+
+@media screen and (min-width: 768px){ /*Aqui nos estamos fazendo uma Formatação que servira Tablets, Desktops e Grandes Telas*/
+    i#burguer{
+        display: none;
+    }
+    menu{
+        display: block;
+    }
+    menu > ul > li{
+        display: inline-block
+    }
+    /* Ao mudarmos o tamanho do nosso site estamos visualizando alguns problemas recorrentes que teremos que conserta-los com Java Script, nos vamos agora para a Tag (body) do nosso Html, iremos aplicar o Java Script nela.*/
+
+    main{
+        width: 768px;
+    }
+}
