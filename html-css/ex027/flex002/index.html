@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <!-- Aula 1 do Cap 27 do Modulo 5 do Curso de Html 5 e Css 3-->
+    <!-- Primeiros passos com Flexbox CSS - @CursoemVideo HTML5 + CSS3 -->
+    <style>
+        div.container{
+            background-color: lightsalmon;
+
+            /* O "Flex Container" (Pai) é o elemento que recebe a Propriedade "display : flex" e controla o comportamento dos seus filhos.*/
+            display: flex;
+
+            /* Aula 2 do Cap 27 do Modulo 5 do Curso de Html 5 e Css 3*/
+            /* Direções e Eixos Flexbox CSS - @CursoemVideo HTML5 + CSS3*/
+
+            /* Aqui nos vamos aprender a usar as Configurações de Direção e Sentido no Flex Box, mas vale ressaltar que estas configurações devem ser aplicadas ao Container que é aquele elemento que possui a Propriedade "display : flex"*/
+
+            flex-direction: column; /* Aqui nos estamos usando a Propriedade (flex-direction) que possui algums valores interessantes como por exemplo (row; column; row-reverse; column-reverse)*/
+
+            /* Antes de avançarmos é interessante explicar sobre os Eixos (axis), Nos temos Dois tipos de Eixos
+            1- Eixo Principal (Main Axis) -> Aqui temos dois pontos o (Main Start) e o (Main End)
+            2- Eixo Transversal (Cross Axis) -> Aqui tambem temos dois pontos, o (Cross Start) e o (Cross End)
+            Dependendo de como está configurado a Propriedade (flex-direction) no conteiner os Eixos podem sim acabar mudando de Lugar, vou explicar isso também.*/
+
+            /* Vou explicar como os dois Eixos se comportam dependendo do (flex-direction: column;) 
+            
+            1 - flex-direction: row; -> Olhe a Pint que deixei aqui com este arquivo
+            2 - flex-direction: column; -> Olhe a Pint que deixei aqui com este arquivo
+            3 - flex-direction: row-reverse; -> Olhe a Pint que deixei aqui com este arquivo
+            4 - flex-direction: column-reverse; -> Olhe a Pint que deixei aqui com este arquivo*/
+        }
+        div.item{
+            background-color: lightskyblue;
+            border: 1px solid black;
+
+            text-align: center;
+            flex: auto; /* A Propriedade "flex : auto" faz com que os Filhos possam se ajustar automaticamente dentro do seu Container.*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>
