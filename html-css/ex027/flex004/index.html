@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <!-- Aula 4 do Cap 27 do Modulo 5 do Curso de Html 5 e Css 3-->
+    <!-- Alinhamento nos eixos Flexbox - @CursoemVideo HTML5 + CSS3-->
+    <style>
+        div.container{
+            background-color: lightsalmon;
+
+            /* O "Flex Container" (Pai) é o elemento que recebe a Propriedade "display : flex" e controla o comportamento dos seus filhos.*/
+            display: flex;
+            height: 300px;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+
+            /* Na Aula de hoje vamos aprender a Propriedade (justify-content) que é responsavel por Alinhar os Elementos no Eixo Principal (Main-Axis), também vamos aprender sobre a Propriedade (Align-Itens) que é Responsavel por Alinhar os Itens no Eixo Transversal (Cross-Axis). Veremos estas 2 Propriedades de forma indivídual.*/
+
+            /*Explicando a Propriedade "justify-conten"
+            
+            Essa Propriedade pode receber 6 valores, sendo eles os seguintes valores (flex-start, flex-end, center, space-between, space-evenly e space-around), agora veremos como cada um desses valores Ajudam a Alinhar oConteúdo do Conteiner levando em Consideração o Eixo Principal (Main-Axis) é claro
+            
+            "flex-start" -> Alinha os itens ao início do eixo principal (Main Start), deixando o espaço livre no final
+            "flex-end" -> Alinha os itens ao final do eixo principal (Main End), deixando o espaço livre no início
+            "center" -> Centraliza os itens no eixo principal, distribuindo o espaço livre igualmente no início e no final
+            "space-between" -> Coloca o primeiro item no Main Start e o último no Main End, distribuindo o espaço restante igualmente entre os itens
+            "space-evenly" -> Distribui os itens de forma que o espaçamento antes do primeiro item, entre os itens e depois do último item seja igual
+            "space-around" ->  Divide o espaço útil do contêiner em áreas iguais e centraliza os itens dentro dessas áreas, resultando em um espaço antes e depois dos itens que é metade do espaço entre eles*/
+
+            /*Explicando a Propriedade "Align-Items"
+            
+            Essa Propriedade possui apenas 4 Valores sendo eles os seguintes (stretch, flex-start, flex-end e center) O "align-items" não possui as opções de espaçamento (space-between, space-evenly, space-around)
+            
+            "stretch" -> (Padrão): Estica os itens para ocupar todo o espaço disponível no eixo transversal
+            "flex-start" -> Alinha os itens ao início do eixo transversal (Cross Start), deixando o espaço livre no final
+            "flex-end" -> Alinha os itens ao final do eixo transversal (Cross End), deixando o espaço livre no início
+            "center" -> Centraliza os itens no eixo transversal, distribuindo o espaço livre igualmente no início e no final*/
+
+            /*Obs : Para vermos os efeitos que a Propriedade "Align-Items" causa no nosso Flex Box nos temos que aumentar a Altura do nosso Conteiner e por isso nos aumentamos a aulra dele na linha 15 do código.*/
+
+            align-items: center;
+
+            
+
+        
+        }
+        div.item{
+            background-color: lightskyblue;
+            border: 1px solid black;
+
+            text-align: center;
+            /*flex: auto;*/ /* A Propriedade "flex : auto" faz com que os Filhos possam se ajustar automaticamente dentro do seu Container.*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>
