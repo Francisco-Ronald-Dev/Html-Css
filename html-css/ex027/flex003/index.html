@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <!-- Aula 3 do Cap 27 do Modulo 5 do Curso de Html 5 e Css 3-->
+    <!-- Empacotamento e fluxo no Flexbox CSS - @CursoemVideo HTML5 + CSS3 -->
+    <!-- Nesta aula nos vamos aprender mais sobre as Flex Box e vamos ver a Propriedade "flex-wrap", também veremos a Propriedade "flex-flow" que é um (ShortHand)-->
+    <style>
+        div.container{
+            background-color: lightsalmon;
+
+            /* O "Flex Container" (Pai) é o elemento que recebe a Propriedade "display : flex" e controla o comportamento dos seus filhos.*/
+            display: flex;
+
+            /* Vale lembrar que os Eixos Transversais (Cross Axis) que virmos anteriormente são Paralelos aos Eixos Principais (Main Axis)*/
+
+            /* Nessa Aula nos vamos aprender mais sobre Flex Box mas principalmente sobre a Propriedade "flex-wrap", esta Propriedade pode causar diferentes efeitos no Container dependendo do seu valor, por exemplo, está Propriedade tem 3 Valores e eu vou amostralos aqui.
+            1 - "flex-wrap : nowrap; -> Caso o Conteiner seja Encolhido ou Achatado, Esticado ou Alargado os seus itens irão acompanhar estas mudanças e isso é bem visivel.
+            2 - "flex-wrap : wrap; -> Caso o Container seja Encolhido os seus Itens irão sofrer uma quebra de linha no Sentido do Eixo Transversal (Cross Axis)
+            3 - "flex-wrap : wrap-reverse; Aqui a Quebra de Linha que os Itens do Container sofrem quando ele é Encolhido ocorre no Sentido Inverso do Eixo Transversal (Cross Axis).*/
+
+            /*Vale lembrar que essa "Quebra de linha" que mencionamos várias vezes aqui só acontece quando o Limite do Conteúdo é "violado".*/
+
+            flex-flow: row nowrap; /*Aqui nos estamos usando a Propriedade "flex-flow" que é um (ShortHand) e aceita Valores da Propriedade "flex-direction" e valores da Propriedade "flex-wrap", aqui nos usamos "flex-flow: row nowrap;"*/
+
+        }
+        div.item{
+            background-color: lightskyblue;
+            border: 1px solid black;
+
+            text-align: center;
+            flex: auto; /* A Propriedade "flex : auto" faz com que os Filhos possam se ajustar automaticamente dentro do seu Container.*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>
