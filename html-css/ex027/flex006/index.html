@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <!-- Aula 6 do Cap 27 do Modulo 5 do Curso de Html 5 e Css 3-->
+    <!-- Alinhamento de elementos empacotados no Flexbox - @CursoemVideo HTML5 + CSS3 -->
+    <!-- Neista Aula nos vamos aprender a como devemos Alinhar os Elementos (Items) que quebram para a Próxima linha, faremos isso usando a Propriedade "align-content"-->
+    <style>
+        div.container{
+            background-color: lightsalmon;
+
+            /* O "Flex Container" (Pai) é o elemento que recebe a Propriedade "display : flex" e controla o comportamento dos seus filhos.*/
+            display: flex;
+            
+            flex-flow: row wrap; /*Vale ressaltar que a Propriedade "align-content" que é a que vamos usar aqui só vai funcionar se tivermos "flex-wrap: wrap;" aqui nos temos o "wrap" no nosso HandShote na linha de cima e por isso da certo também.*/
+            /*Obs : Também funciona quando em vez de "wrap" usamos "wrap-reverse"*/
+
+            align-content: flex-start; /*A Propriedade "align-content" possui algums valores que eu vo demonstrar e explicar, veja: 
+            "stretch" -> (padrão): Distribui o espaço igualmente entre as linhas/colunas, esticando os itens 
+            "flex-start" -> Alinha os itens empacotados ao início do eixo transversal 
+            "flex-end" -> Alinha os itens empacotados ao final do eixo transversal
+            "center" -> Centraliza os itens empacotados no eixo transversal
+            "space-between" -> Distribui o espaço livre entre as linhas, com a primeira no início e a última no final
+            "space-evenly" -> Distribui o espaço livre de forma igual entre as linhas, e também antes da primeira e depois da última linha
+            "space-around" -> Distribui o espaço livre ao redor das linhas, com o dobro do espaço entre as linhas do que nas extremidades*/
+            
+            height: 400px;
+        }
+        div.item{
+            background-color: lightskyblue;
+            border: 1px solid black;
+
+            text-align: center;
+            padding: 40px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">J</div>
+        <div class="item">K</div>
+        <div class="item">L</div>
+        <div class="item">M</div>
+    </div>
+</body>
+</html>
