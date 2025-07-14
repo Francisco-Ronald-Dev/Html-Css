@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box Centralizado</title>
+    <!-- Aula 5 do Cap 27 do Modulo 5-->
+    <!-- Centralização absoluta com Flexbox - @CursoemVideo HTML5 + CSS3-->
+
+    <!-- Aqui nesta Aula nos vamos aprender a Centralizar de forma eficiente um Flex Box levando em consideração os seus Dois Eixos.-->
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            background-color: lightsalmon;
+        }
+        main{
+            background-color: lightgreen;
+            height: 90vh;
+            width: 90vw;
+            display: flex;
+            flex-flow: row nowrap;
+            /* Paracentralizar de uma forma efiênte os Items de um Flex Box nos temos que estar no Container e inserir estas duas Propriedade (justify-content: center;) e (align-items: center;)*/
+            justify-content: center;
+            align-items: center;
+        }
+        section{
+            background-color: lightseagreen;
+            height: 200px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Tela de Login</h1>
+        </section>
+    </main>
+</body>
+</html>
