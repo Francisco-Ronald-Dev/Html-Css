@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <!-- Aula 7 do Cap 27 do Modulo 5 do Curso de Html 5 e Css 3-->
+    <!-- Anatomia dos itens Flexbox - @CursoemVideo HTML5 + CSS3 -->
+
+    <!-- Nesta aula nos vamos aprender mais sobre as Propriedades dos Itens dos Flex Box ou dos "Flex Items", vale ressaltar que por Padrão os Items não são flexiveis como o Seu Container a menos que sejam configurados mas não vamos fazer isso por enquanto póis isso requer um conhecimento bem mais avançado.-->
+    <style>
+        div.container{
+            background-color: lightsalmon;
+
+            /* O "Flex Container" (Pai) é o elemento que recebe a Propriedade "display : flex" e controla o comportamento dos seus filhos.*/
+            display: flex;
+            flex-flow: row nowrap;
+        }
+        div.item{
+            background-color: lightskyblue;
+            border: 1px solid black;
+            padding: 20px;
+
+            text-align: center;
+            
+            /* Nesta Aula veremos a Propriedade "Order" e "Align self", vou explicar eles agora :
+            
+            Por Padrão a Propriedade "Order" é 0 para todos os items mas podemos mudar isso, se mudarmos este Número os Items serão exibidos do menor para o maior.*/
+
+        
+        }
+        
+        div#i1{order: 0;}
+        div#i2{order: -2;}
+        div#i3{order: 4;}
+        div#i4{order: 8;}
+        div#i5{order: 2;}
+        div#i6{order: 0;}
+        div#i7{order: -4;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="i1">A</div>
+        <div class="item" id="i2">B</div>
+        <div class="item" id="i3">C</div>
+        <div class="item" id="i4">D</div>
+        <div class="item" id="i5">E</div>
+        <div class="item" id="i6">F</div>
+        <div class="item" id="i7">G</div>
+    </div>
+</body>
+</html>
