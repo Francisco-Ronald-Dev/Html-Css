@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <!-- Aula 8 do Cap 27 do Modulo 5 do Curso de Html 5 e Css 3-->
+    <!-- Propriedade flex-basis em Flexbox - @CursoemVideo HTML5 + CSS3 -->
+    <style>
+        div.container{
+            background-color: lightsalmon;
+
+            /* O "Flex Container" (Pai) é o elemento que recebe a Propriedade "display : flex" e controla o comportamento dos seus filhos.*/
+            display: flex;
+            flex-flow: row nowrap;
+            
+        }
+        div.item{
+            background-color: lightskyblue;
+            border: 1px solid black;
+
+            text-align: center;
+            /*flex: auto; */ /* A Propriedade "flex : auto" faz com que os Filhos possam se ajustar automaticamente dentro do seu Container.*/
+
+            flex-flow: 150px;
+            
+            /* Nesa Aula nos vamos aprender mais sobre a Propriedade "flex-basis" que é uma Propriedade semelhante a "flex : auto;", ambas as 2 só se aplicam aos Filhos dos Conteiners, ou seja, aos Items.
+            
+            Eu vou explicar quais são os valores para esta Propriedade "flex-basis" : 
+            "auto" -> Este valor faz com que os Items se adaptem ao Tamanho do seu conteúdo.
+            "150px" -> Podemos também definir um valor, isso faz com que os Items tenham em paralelo ao Eixo Principal (Main-Axies) uma Largura de 150px, caso o conteúdo do Item seja maio que isso então o Conteúdo do Item vai "quebrar" para a Proxima Linha.*/
+
+            /*O vídeo também demonstra como "flex-basis" interage com "flex-flow: row no-wrap;" e "flex-flow: row wrap;", mostrando que com "no-wrap" os itens encolhem para caber, e com "wrap" eles quebram para a próxima linha.*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>
