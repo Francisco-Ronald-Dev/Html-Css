@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <!-- Aula 10 do Cap 27 do Modulo 5 do Curso de Html 5 e Css 3-->
+    <!-- A propriedade flex - @CursoemVideo HTML5 + CSS3 -->
+
+    <!-- Nesta aula nos vamos aprender sobre um (ShortHand) que facilita na hora de codar, o (ShortHand) que vamos aprender aqui é o "flex" que pode receber 3 Propriedades, vou explicar isso mais para frente nos seletores dos Items.-->
+    <style>
+        div.container{
+            background-color: lightsalmon;
+
+            /* O "Flex Container" (Pai) é o elemento que recebe a Propriedade "display : flex" e controla o comportamento dos seus filhos.*/
+            display: flex;
+
+            /*Antes de começarmos quero deixar bem claro que as Propriedades que vamos ver aqui são dos Filhos e elas funcionam de forma evidente quando o Conteiner tem a Propriedade a baixo.*/
+            flex-flow: row nowrap;
+        }
+        div.item{
+            background-color: lightskyblue;
+            border: 1px solid black;
+
+            text-align: center;
+            /*flex: auto;*/ /* A Propriedade "flex : auto" faz com que os Filhos possam se ajustar automaticamente dentro do seu Container.*/
+
+            text-align: center;
+
+        }
+        div#cxA{
+            /*flex-shrink: 1;
+            flex-grow: 0;
+            flex-basis: 200px;*/
+
+            /*O (ShortHand) que vamos ver aqui é o "flex" ele aceita 3 valores, sendo eles "flex-grow", "flex-shrink", e o "flex-basis" todos nesta ordem, e entre estes valores não usamos aspas e nem vírgulas, vejá:*/
+            flex: 1 0 200px;
+
+            /*Este (ShortHand) possui alguns valores muito utilizados que eu vo listar eles aqui para melhor compreensão.
+            
+            "flex: 0 1 auto;" -> Este é o valor padrão que também pode ser escritop desta forma : "flex: initial;"
+            
+            "flex: 0 0 auto;" -> com estes valores os Items não vão poder Aumentar e nem Encolher o seu tamanho, alias, seu tamanho vai depender únicamente do tamando do seu conteúdo e isso também pode ser esctito desta forma : "flex: none;" Vale ressaltar que nesta configuração o Item não é nada flexivel.
+            
+            "flex: 1 1 auto;" -> Com esta Configuração o Item pode Aumentar e Encolher e ele também pode ser escrito desta forma "flex: auto;" e vale lembrar que nesta Configuração o Item é Totalmente Flexivel.
+            
+            Também podemos escrever este (ShortHand) com um único valor como :
+            "flex: 3;" -> Agora eu vo explicar o que isso siguinifica, o valor que colocarmos aqui vai servir apenas para a Propriedade "flex-grow", ou seja, o resultado será este : "flex: 3 1 auto;" os outros 2 valores irão permanecer no seu Padrão.*/
+        }
+        div#cxB{
+            /*flex-shrink: 1;
+            flex-grow: 1;
+            flex-basis: 150px;*/
+            flex: 1 1 150px;
+        }
+        div#cxC{
+            /*flex-shrink: 1;
+            flex-grow: 2;
+            flex-basis: auto;*/
+            flex: 1 8 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="cxA">A</div>
+        <div class="item" id="cxB">B</div>
+        <div class="item" id="cxC">C</div>
+    </div>
+</body>
+</html>
