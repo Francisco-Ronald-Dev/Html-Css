@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <!-- Aula 9 do Cap 27 do Modulo 5 do Curso de Html 5 e Css 3-->
+    <!-- Controle do tamanho de itens flexíveis - @CursoemVideo HTML5 + CSS3 -->
+
+    <!-- Nesta aula nos vamos aprender sobre duas Propriedades, sendo elas "flex-grow" e "flex-shrink" que são duas Propriedades que se aplicam aos Filhos do Conteiner, ou seja, os Items.-->
+    <style>
+        div.container{
+            background-color: lightsalmon;
+
+            /* O "Flex Container" (Pai) é o elemento que recebe a Propriedade "display : flex" e controla o comportamento dos seus filhos.*/
+            display: flex;
+
+            /*Antes de começarmos quero deixar bem claro que as Propriedades que vamos ver aqui são dos Filhos e elas funcionam de forma evidente quando o Conteiner tem a Propriedade a baixo.*/
+            flex-flow: row nowrap;
+        }
+        div.item{
+            background-color: lightskyblue;
+            border: 1px solid black;
+
+            text-align: center;
+            /*flex: auto;*/ /* A Propriedade "flex : auto" faz com que os Filhos possam se ajustar automaticamente dentro do seu Container.*/
+
+            text-align: center;
+            flex-basis: 250px;
+
+            /*Por padrão os Valores destas Propriedades são estes:*/
+            /*flex-shrink: 1;
+            flex-grow: 0;*/
+
+            /* agora eu vo explicar quais os valores que estas Propriedades tem.
+            "flex-shrink: 1;" Aqui o Item Encolhe, este é o Padrão.
+            "flex-shrink: 0;" Aqui o Item Não Encolhe.
+            
+            "flwx-grow: 0;" Aqui o Item Não Cresce, este é o Padrão.
+            "flwx-grow: 1;" Aqui o Item Cresce.*/
+
+            /*Referente aos Valores Númericos que demos à estas Propriedades nos podemos atribuir outros valores maiores ou menores levando em consideração apenas a Proporção, apenas isso, não é difícil nos veremos isso em prática nos seletores que vamos criar.*/
+
+            /*Obs : Se o Conteiner tiver a configuração "flex-flow: row nowrap;" então devemos tomar um certo cuidado póis se os Items tiveres as Configurações "flex-shrink: 0;" e "flex-grow: 1;" Itens crescem, mas não encolhem, podendo causar transbordamento (overflow) se o contêiner for muito pequeno.*/
+        }
+        div#cxA{
+            flex-shrink: 1;
+            flex-grow: 0;
+        }
+        div#cxB{
+            flex-shrink: 1;
+            flex-grow: 1;
+            /* Com isso chegamos a conclusão que a idea de "Proporção" que falamos anteriormente se resume em o B crescendo o dobro do A.*/
+        }
+        div#cxC{
+            flex-shrink: 1;
+            flex-grow: 2;
+            /* Com isso chegamos a conclusão que a idea de "Proporção" que falamos anteriormente se resume em o C crescendo o dobro do B.*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="cxA">A</div>
+        <div class="item" id="cxB">B</div>
+        <div class="item" id="cxC">C</div>
+    </div>
+</body>
+</html>
